@@ -1,0 +1,47 @@
+h1 {
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.h1 {
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.no_margin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h4 p, .h4 p {
+    color: #9B9B9B;
+    line-height: 1.7;
+}
+
+h4.radio-and-checkbox {
+    margin-top: 8px !important;
+}
+
+p.micro-copy {
+    color: #565656;
+    font-size: 14px;
+    margin-left: 30px;
+}

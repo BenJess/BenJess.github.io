@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2018 style guide</title>
+
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">iModules UX Style Guide</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+          <li>
+            <a href="index.html">
+              <i class="fa fa-fw fa-dashboard" aria-hidden="true"></i> Reference Modules</a>
+          </li>
+          <li>
+            <a href="buttons.html">
+              <i class="fa fa-fw fa-square" aria-hidden="true"></i> Buttons</a>
+          </li>
+          <li>
+            <a href="tables.html">
+              <i class="fa fa-fw fa-table" aria-hidden="true"></i> Tables</a>
+          </li>
+          <li class="active">
+            <a href="forms.html">
+              <i class="fa fa-fw fa-edit" aria-hidden="true"></i> Forms</a>
+          </li>
+          <li>
+            <a href="copy.html">
+              <i class="fa fa-fw fa-text-width" aria-hidden="true"></i> Copy</a>
+          </li>
+          <li>
+            <a href="navigation.html">
+              <i class="fa fa-fw fa-bars" aria-hidden="true"></i> Navigation</a>
+          </li>
+          <li>
+            <a href="modals.html">
+              <i class="fa fa-fw fa-times-circle" aria-hidden="true" style="color: #9d9d9d"></i> Modals</a>
+          </li>
+          <li>
+            <a href="tabs.html">
+              <i class="fa fa-fw fa-folder" aria-hidden="true"></i> Tabs</a>
+          </li>
+          <li>
+            <a href="grid.html">
+              <i class="fa fa-fw fa-th" aria-hidden="true"></i> Grid</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="page-wrapper">
+      <div class="container-fluid header">
+        <h1>Forms</h1>
+        <h2>Guiding Principles</h2>
+        <hr>
+        <div class="col-md-6">Most of our forms, such as text inputs, text areas, and form validations are fairly basic. There are a few exceptions
+          to this rule, in the form of custom drop-downs, checkboxes, radio buttons, and search fields. Form fields are flex
+          box responsive. Required fields will contain a
+          <span class="warning-text">* required</span> next to the field name - for WCAG compliance, and if the user attempts to progress to the next
+          step without entering any field information the box will hightlight red *See "Input with error" below.</div>
+      </div>
+
+      <!-- COL 1 -->
+
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+
+            <div class="form-group">
+              <h3>Text Input</h3>
+              <label id="textinput" for="textinput1" hidden="true">Text Input Field</label>
+              <input class="form-control" id="textinput1" placeholder="Enter text">
+            </div>
+            <div class="form-group">
+              <h3>Required Text Input
+                <span class="warning-text"> * required</span>
+              </h3>
+              <label id="textinput" for="textinput2" hidden="true">Required Text Input Field</label>
+              <input class="form-control" id="textinput2">
+            </div>
+            <div class="form-group">
+
+              <h3>Upload File Input</h3>
+
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <button type="button" class="enc-btn primary">Choose File</button>
+                </span>
+                <label id="textinput" for="fileupload" hidden="true">Required Text Input Field</label>
+                <input class="form-control" type="text" id="fileupload" placeholder="Nothing Selected">
+              </div>
+            </div>
+            <div class="form-group">
+
+              <h3>Text Area</h3>
+
+              <label id="textinput" for="textarea" hidden="true">Text Area</label>
+              <textarea class="form-control" id="textarea" rows="3"></textarea>
+            </div>
+
+            <form>
+              <fieldset>
+                <legend hidden="true">Checkboxes</legend>
+                <h3>Checkboxes</h3>
+                <div class="checkbox">
+                  <span>
+                    <input type="checkbox" id="4" value="on">
+                    <label for="4">
+                      <h4>Checkbox H4 #000</h4>
+                    </label>
+                  </span>
+                </div>
+                <div class="checkbox disabled">
+                  <span>
+                    <input type="checkbox" id="5" value="off" disabled>
+                    <label for="5">
+                      <h4 class="radio-and-checkbox">Checkbox</h4>
+                    </label>
+                  </span>
+                </div>
+                <legend hidden="true">Radio Buttons</legend>
+                <h3>Radio Buttons</h3>
+                <div class="radio">
+                  <input type="radio" id="radio01" name="radio" />
+                  <label for="radio01">
+                    <span></span>
+                    <h4 class="radio-and-checkbox">Radio Button 1 H4 #000</h4>
+                  </label>
+                  <p class="micro-copy">Example block-level. #9B9B9B font-size 14px</p>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="radio02" name="radio" />
+                  <label for="radio02">
+                    <span></span>
+                    <h4 class="radio-and-checkbox">Radio Button 2</h4>
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+            <div class="form-group">
+              <h3>Delux Dropdown</h3>
+              <div class="dropdown">
+                <button class="enc-btn primary enc-btn dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">More Options
+                  <span class="caret"></span>
+                </button>
+                <ul class="delux-dropdown-menu btn-block">
+                  <li class="delux-dropdown-header">Select</li>
+                  <li>
+                    <a href="#">Export to .csv</a>
+                  </li>
+                  <li>
+                    <a href="#">Compare</a>
+                  </li>
+                  <li>
+                    <a href="#">Enable Form</a>
+                  </li>
+                  <li class="delux-divider"></li>
+                  <li>
+                    <a href="#">Delete</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- COL 2 -->
+
+          <div class="col-md-5" style="padding-left: 30px">
+            <div class="form-group">
+              <h3>Multiple Selects</h3>
+              <label id="multiselectLabel" for="multiselect" hidden="true">Text Area</label>
+              <select multiple class="form-control" id="multiselect">
+                <option>Alum Dinner</option>
+                <option>AmberTest - freeEK</option>
+                <option>AmberTest - test auto renewal</option>
+                <option>AmberTest - top level</option>
+                <option>Attending Law Gathering</option>
+                <option>Attending Undergrad Gathering</option>
+                <option>Authenticated</option>
+                <option>Autorenew test - auto1</option>
+              </select>
+            </div>
+            <br>
+            <button type="submit" class="enc-btn success">Submit Button</button>
+            <div class="form-group">
+              <h3>Disabled Input</h3>
+              <label id="disabledInputLabel" for="disabledInput" hidden="true">Disabled Input</label>
+              <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled="true">
+            </div>
+            <br>
+            <div class="form-group">
+
+              <h3>Search</h3>
+
+              <label id="searchLabel" for="search" hidden="true">Disabled Input</label>
+              <div class="input-group">
+                <input class="form-control" type="text" id="search">
+                <span class="input-group-btn">
+                  <button type="button" class="enc-btn primary">Search</button>
+                </span>
+              </div>
+            </div>
+            <br>
+
+            <div class="form-group">
+
+              <h3>Date Picker</h3>
+
+              <label id="datepickerLabel" for="datepicker" hidden="true">Date Month Day Year</label>
+              <div class="input-group">
+                <input class="form-control" type="text" id="datepicker" placeholder="MM/DD/YYYY">
+                <span class="input-group-btn">
+                  <button type="button" class="enc-btn primary">Select Date</button>
+                </span>
+              </div>
+            </div>
+            <br>
+
+            <div class="form-group">
+
+              <h3>Add Items</h3>
+
+              <label id="itempickerLabel" for="itempicker" hidden="true">Add List Item</label>
+              <div class="input-group">
+                <input class="form-control" type="text" id="itempicker" placeholder="Add List Item">
+                <span class="input-group-btn">
+                  <button type="button" class="enc-btn primary">+</button>
+                </span>
+              </div>
+            </div>
+            <br>
+
+            <div class="form-group">
+
+              <h3>Add Recipients</h3>
+
+              <label id="addrecipLabel" for="addrecip" hidden="true">Add Email Recipients</label>
+              <div class="input-group">
+                <input class="form-control" type="text" id="addrecip" placeholder="Add Email">
+                <span class="input-group-btn">
+                  <button type="button" class="enc-btn primary">+</button>
+                </span>
+              </div>
+              <br>
+              <div class="list-items-box list-builder">
+                <ul>
+                  <li>email.test1@gmail.com
+                    <i class="fa fa-remove"></i>
+                  </li>
+                  <li>email.test2@gmail.com
+                    <i class="fa fa-remove"></i>
+                  </li>
+                  <li>email.test3@gmail.com
+                    <i class="fa fa-remove"></i>
+                  </li>
+                  <li>email.test4@gmail.com
+                    <i class="fa fa-remove"></i>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+
+      <div class="row no-gutters">
+        <div class="col-md-10">
+          <h3>Multi Select Forms</h3>
+          <label id="multiselectLabel" for="multiselectfield" hidden="true">Multi Select Form</label>
+          <div class="multiSelect">
+
+            <select multiple class="form-control" id="multiselectfield">
+              <option>Alum Dinner</option>
+              <option>AmberTest - freeEK</option>
+              <option>AmberTest - test auto renewal</option>
+              <option>AmberTest - top level</option>
+              <option>Attending Law Gathering</option>
+              <option>Attending Undergrad Gathering</option>
+              <option>Authenticated</option>
+              <option>Autorenew test - auto1</option>
+            </select>
+
+            <!-- Multi-Select Gutter -->
+
+            <div class="select-gutter">
+            </div>
+
+            <!-- Multi-Select Gutter -->
+
+            <label id="multiselectLabel2" for="multiselectfield2" hidden="true">Multi Select Form 2</label>
+            <select multiple class="form-control" id="multiselectfield2">
+              <option>Alum Dinner</option>
+              <option>AmberTest - freeEK</option>
+              <option>AmberTest - test auto renewal</option>
+              <option>AmberTest - top level</option>
+              <option>Attending Law Gathering</option>
+              <option>Attending Undergrad Gathering</option>
+              <option>Authenticated</option>
+              <option>Autorenew test - auto1</option>
+            </select>
+
+          </div>
+        </div>
+      </div>
+      <!-- Instance Fields END -->
+    </div>
+  </div>
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="scripts/main.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+.table-delux-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    right: 20px;
+    max-width: 300px;
+    min-width: 250px;
+    padding: 0px 0;
+    margin: 0px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.table-delux-dropdown-menu .table-delux-divider {
+    height: 1px;
+    margin: 0px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.table-delux-dropdown-menu > li > a {
+    display: block;
+    max-width: inherit;
+    min-width: inherit;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 300;
+    line-height: 2;
+    color: #333;
+    white-space: nowrap;
+    background-color: #fff;
+}
+
+.table-delux-dropdown-menu > li > a:hover, .table-delux-dropdown-menu > li > a:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #90bcf0;
+}
+
+.table-delux-dropdown-menu > .active > a, .table-delux-dropdown-menu > .active > a:hover, .table-delux-dropdown-menu > .active > a:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #90bcf0;
+    outline: 0;
+}
+
+.table-delux-dropdown-menu > .disabled > a, .table-delux-dropdown-menu > .disabled > a:hover, .table-delux-dropdown-menu > .disabled > a:focus {
+    color: #494949;
+}
+
+.table-delux-dropdown-menu > .disabled > a:hover, .table-delux-dropdown-menu > .disabled > a:focus {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.open > .table-delux-dropdown-menu {
+    display: block;
+    left: 60px;
+    top: -12px;
+}
+
+.menu_arrow_box {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.menu_arrow_box:after, .menu_arrow_box:before {
+    right: 100%;
+    top: 30px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.menu_arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 15px;
+    margin-top: -15px;
+}
+
+.menu_arrow_box:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-right-color: #ccc;
+    border-width: 15px;
+    margin-top: -15px;
+}

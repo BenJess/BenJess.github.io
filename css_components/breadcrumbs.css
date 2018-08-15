@@ -1,0 +1,21 @@
+.arrow-breadcrumb {
+    font-size: 14px;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 10px 0px 10px 0px;
+    list-style: none;
+}
+
+.arrow-breadcrumb > li {
+    display: inline-block;
+}
+
+.arrow-breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/";
+}
+
+.arrow-breadcrumb > li.active > a, .arrow-breadcrumb > li.active > a:hover, .arrow-breadcrumb > li.active > a:focus {
+    color: #494949;
+    text-decoration: none;
+}

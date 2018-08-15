@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2018 style guide</title>
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body style="background-color: #ececec">
+    <div class="cms-breadcrumbs">
+        <span>
+            <i class="fa fa-chevron-left" aria-hidden="true" style="margin-right: 15px"></i>Lorum Ipsum</div>
+    </span>
+    <div class="content-wrapper" id="dynamic-container">
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <h1 id="pagetitle">Define Styles</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="inner-content-wrapper">
+                    <div class="container-fluid" style="margin-bottom: 15px">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <h3>Style Profile Name
+                                        <span style="color: red; font-size: 18px;"> * required</span>
+                                    </h3>
+                                    <input class="form-control">
+                                </div>
+                                <h3>Choose Existing Base Pattern</h3>
+                                <button data-toggle="modal" data-target="#tabModal" class="enc-btn primary enc-btn" style="margin-right: 15px">Select</button>
+                                <div id="pattenName" style="padding: 30px 0px 20px 0px">No Pattern Selected. <= (when pattern is selected replace text with pattern name)</div>
+
+                                <!-- TEMPLATE SELECTOR -->
+
+                                <div id="tabModal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog modal">
+                                        <div class="modal-content">
+                                            <div class="enc-modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&#9587;</button>
+                                                <h4 class="modal-title">Dynamic Content: Select Source, Layout and Style</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <!-- Content Source Dropdown -->
+                                                            <h3>Select Content Source</h3>
+                                                            <div class="dropdown" style="margin-bottom: 30px">
+                                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Events
+                                                                    <span class="Select-arrow-zone pull-right">
+                                                                        <span class="Select-arrow"></span>
+                                                                    </span>
+                                                                </button>
+                                                                <ul class="delux-dropdown-menu btn-block">
+                                                                    <li>
+                                                                        <a href="#">Choice 1</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Choice 2</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Choice 3 and So On...</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Nav tabs -->
+
+                                                    <div class="card">
+                                                        <ul class="nav nav-tabs" role="tablist" style="margin: 0">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#withtextonly" aria-controls="textonly" role="tab" data-toggle="tab">Text Only</a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#withbutton" aria-controls="withbutton" role="tab" data-toggle="tab">With Button</a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#withtextlink" aria-controls="withtextlink" role="tab" data-toggle="tab">Text Link</a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#withimage" aria-controls="withimage" role="tab" data-toggle="tab">With Image</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane active" id="withtextonly">
+                                                                <div class="container-fluid" style="padding: 0">
+                                                                    <div class="col-md-12" style="padding: 0">
+                                                                        <div class="data-grid-row">
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/Headline.svg" class="templatebox img-fluid tbclicked">
+                                                                                <h4>Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/HeadlineCopy.svg" class="templatebox img-fluid">
+                                                                                <h4>Headline / Copy</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/HeadlineDateAndCopy.svg" class="templatebox img-fluid">
+                                                                                <h4>Headline / Date and Copy</h4>
+                                                                            </div>
+
+                                                                            <!-- add </div> 3 accross -->
+
+                                                                            <div class="data-grid-row">
+                                                                                <div class="data-grid-col">
+                                                                                    <img src="../../../images/Headline2Col.svg" class="templatebox img-fluid">
+                                                                                    <h4>Headline / 2 Col</h4>
+                                                                                </div>
+                                                                                <div class="data-grid-col">
+                                                                                    <img src="../../../images/Headline3Col.svg" class="templatebox img-fluid">
+                                                                                    <h4>Headline / 3 Col</h4>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!-- Remove one </div> to revert to 3 accross -->
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane" id="withbutton">
+                                                                <div class="container-fluid" style="padding: 0">
+                                                                    <div class="col-md-12" style="padding: 0">
+                                                                        <div class="data-grid-row">
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/ButtonHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Button / Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/ButtonDateAndHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Button / Date and Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/Button2ColHeader.svg" class="templatebox img-fluid">
+                                                                                <h4>Button / 2 Col Header</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/Button3ColHeader.svg" class="templatebox img-fluid">
+                                                                                <h4>Button / 3 Col Header</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/ButtonImageWithHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Button / Image with Headline</h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="data-grid-row">
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/ButtonBannerWithHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Button / Banner with Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/Button2ColImageWithHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Button / 2 Col Image with Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/Button3ColImageWithHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Button / 3 Col Image with Headline</h4>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane" id="withtextlink">
+                                                                <div class="container-fluid" style="padding: 0">
+                                                                    <div class="col-md-12" style="padding: 0">
+                                                                        <div class="data-grid-row">
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/TextLinkHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Text Link / Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/TextLinkImageWithHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Text Link / Image with Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/TextLinkCalendarWithHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Text Link / Calendar with Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/TextLinkBannerWithHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Text Link / Banner with Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/TextLink2ColImageWithHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Text Link / 2 Col Image with Headline</h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="data-grid-row">
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/TextLink3ColImageWithHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Text Link / 3 Col Image with Headline</h4>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane" id="withimage">
+                                                                <div class="container-fluid" style="padding: 0">
+                                                                    <div class="col-md-12" style="padding: 0">
+                                                                        <div class="data-grid-row">
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/ImageHeadline.svg" class="templatebox img-fluid">
+                                                                                <h4>Image / Headline</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/ImageHeadlineWithButton.svg" class="templatebox img-fluid">
+                                                                                <h4>Image / Headline with Button</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/ImageHeadlineWithTextLink.svg" class="templatebox img-fluid">
+                                                                                <h4>Image / Headline With Text Link</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/Image2ColHeadlineWithButton.svg" class="templatebox img-fluid">
+                                                                                <h4>Image / 2 Col Headline with Button</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/Image2ColHeadlineWithTextLink.svg" class="templatebox img-fluid">
+                                                                                <h4>Image / 2 Col Headline with Text Link</h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="data-grid-row">
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/Image3ColHeadlineWithButton.svg" class="templatebox img-fluid">
+                                                                                <h4>Image / 3 Col Headline with Button</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/Image3ColHeadlineWithTextLink.svg" class="templatebox img-fluid">
+                                                                                <h4>Image / 3 Col Headline with Text Link</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/HeroImageHeadlineWithButton.svg" class="templatebox img-fluid">
+                                                                                <h4>Hero Image / Headline with Button</h4>
+                                                                            </div>
+                                                                            <div class="data-grid-col">
+                                                                                <img src="../../../images/HeroImageHeadlineWithTextLink.svg" class="templatebox img-fluid">
+                                                                                <h4>Hero Image / Headline with Text Link</h4>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="enc-btn basic enc-btn-lg-camel" style="margin-right: 10px">Cancel</button>
+                                                <button type="button" class="enc-btn primary enc-btn-lg-camel">Select</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TEMPLATE SELECTOR -->
+
+                            </div>
+                            <div class="col-md-12">
+
+                                <!--Border Section-->
+
+                                <h3>Borders</h3>
+                                <div class="data-grid-container">
+                                    <ul class="data-grid-row">
+                                        <li class="column-header data-grid-column">Attributes</li>
+                                        <li class="column-header data-grid-column">Primary</li>
+                                        <li class="column-header data-grid-column">Secondary</li>
+                                        <li class="column-header data-grid-column">Tertiary</li>
+                                        <li class="column-header data-grid-column">Buttons</li>
+                                    </ul>
+
+                                    <!-- Border Colors row -->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Color</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!--Border Width row-->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Width</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">3px
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">1px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">2px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">3px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">4px</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">1px
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">1px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">2px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">3px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">4px</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">1px
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">1px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">2px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">3px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">4px</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">1px
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">1px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">2px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">3px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">4px</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Backgrounds Section-->
+
+                                <h3>Backgrounds</h3>
+                                <div class="data-grid-container">
+                                    <ul class="data-grid-row">
+                                        <li class="column-header data-grid-column">Attributes</li>
+                                        <li class="column-header data-grid-column">Primary</li>
+                                        <li class="column-header data-grid-column">Secondary</li>
+                                        <li class="column-header data-grid-column">Tertiary</li>
+                                        <li class="column-header data-grid-column">Buttons</li>
+                                    </ul>
+
+                                    <!-- Background Colors row -->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Color</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Headers Section-->
+
+                                <h3>Headers</h3>
+                                <div class="data-grid-container">
+                                    <ul class="data-grid-row">
+                                        <li class="column-header data-grid-column">Attributes</li>
+                                        <li class="column-header data-grid-column">H1</li>
+                                        <li class="column-header data-grid-column">H2</li>
+                                        <li class="column-header data-grid-column">H3</li>
+                                    </ul>
+
+                                    <!-- Header Colors row -->
+
+                                    <ul class="data-grid-row">
+
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Color</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!--Header Font row-->
+
+                                    <ul class="data-grid-row">
+
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Font</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Roboto
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Roboto</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Arial</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Helvetica</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Garamond</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Arial
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Roboto</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Arial</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Helvetica</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Garamond</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Arial
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Roboto</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Arial</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Helvetica</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Garamond</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!--Headers Weight row  -->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Weight</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Heavy
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Thin</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Thin Italic</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Regular</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Heavy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Light
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Thin</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Thin Italic</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Regular</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Heavy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Light Italic
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Thin</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Thin Italic</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Regular</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Heavy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!--Headers Font Size row  -->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Font Size</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">24
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">7</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">8</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">9</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">10</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">11</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">12</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">14</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">18</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">24</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">30</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">36</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">48</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">60</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">72</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">96</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">24
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">7</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">8</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">9</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">10</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">11</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">12</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">14</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">18</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">24</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">30</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">36</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">48</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">60</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">72</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">96</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">24
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">7</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">8</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">9</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">10</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">11</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">12</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">14</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">18</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">24</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">30</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">36</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">48</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">60</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">72</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">96</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Copy Section-->
+
+                                <h3>Text</h3>
+                                <div class="data-grid-container">
+                                    <ul class="data-grid-row">
+                                        <li class="column-header data-grid-column">Attributes</li>
+                                        <li class="column-header data-grid-column">Body</li>
+                                        <li class="column-header data-grid-column">HyperLink</li>
+                                        <li class="column-header data-grid-column">Buttons</li>
+                                    </ul>
+
+                                    <!--Copy Colors row-->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Color</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown dropdown-colorselector">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span class="btn-colorselector" style="background-color: rgb(205, 92, 92);"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-caret">
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#A0522D" data-value="106" title="sienna" style="background-color: rgb(160, 82, 45);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn selected" href="#" data-color="#CD5C5C" data-value="47" title="indianred" style="background-color: rgb(205, 92, 92);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF4500" data-value="87" title="orangered" style="background-color: rgb(255, 69, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#DC143C" data-value="15" title="crimson" style="background-color: rgb(220, 20, 60);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#FF8C00" data-value="24" title="darkorange" style="background-color: rgb(255, 140, 0);"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="color-btn" href="#" data-color="#C71585" data-value="78" title="mediumvioletred" style="background-color: rgb(199, 21, 133);"></a>
+                                                    </li>
+                                                    <input class="hexInput" placeholder="#">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!--Copy Font row-->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Font</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Roboto
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Roboto</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Arial</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Helvetica</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Garamond</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Arial
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Roboto</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Arial</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Helvetica</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Garamond</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Muli
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Roboto</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Arial</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Helvetica</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Garamond</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!--Copy Weights row-->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Weight</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Light
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Thin</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Thin Italic</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Regular</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Heavy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Light Italic
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Thin</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Thin Italic</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Regular</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Heavy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Regular
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Thin</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Thin Italic</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Regular</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Heavy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!--Copy Font Size row-->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Font Size</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">24
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">7</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">8</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">9</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">10</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">11</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">12</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">14</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">18</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">24</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">30</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">36</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">48</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">60</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">72</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">96</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">24
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">7</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">8</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">9</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">10</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">11</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">12</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">14</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">18</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">24</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">30</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">36</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">48</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">60</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">72</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">96</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">24
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">7</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">8</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">9</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">10</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">11</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">12</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">14</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">18</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">24</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">30</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">36</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">48</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">60</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">72</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">96</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <!--Button Attributes Section-->
+
+                                <h3>Buttons</h3>
+                                <div class="data-grid-container">
+                                    <ul class="data-grid-row">
+                                        <li class="column-header data-grid-column">Attributes</li>
+                                        <li class="column-header data-grid-column">Primary</li>
+                                        <li class="column-header data-grid-column">Secondary</li>
+                                        <li class="column-header data-grid-column">Tertiary</li>
+                                    </ul>
+
+                                    <!--Button Size row-->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Size</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Large
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Large</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Regular</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Small</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Extra Small</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Regular
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Large</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Regular</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Small</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Extra Small</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Small
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">Large</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Regular</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Small</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Extra Small</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!--Button Radius row-->
+
+                                    <ul class="data-grid-row">
+                                        <li class="data-grid-column">
+                                            <h4 style="margin-right: 15px">Corner Radius</h4>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">3px
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">1px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">2px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">3px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">4px</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">1px
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">1px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">2px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">3px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">4px</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="data-grid-column">
+                                            <div class="dropdown">
+                                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">1px
+                                                    <span class="Select-arrow-zone pull-right">
+                                                        <span class="Select-arrow"></span>
+                                                    </span>
+                                                </button>
+                                                <ul class="delux-dropdown-menu btn-block">
+                                                    <li>
+                                                        <a href="#">1px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">2px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">3px</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">4px</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Table End-->
+
+                                <ul class="btns">
+                                    <li class="btns">
+                                        <button id="#" class="enc-btn basic enc-btn-lg-camel">Cancel</button>
+                                    </li>
+                                    <li class="btns">
+                                        <button id="#" class="enc-btn success enc-btn-lg-camel">Save</button>
+                                    </li>
+                                    <li class="btns">
+                                        <button id="#" class="enc-btn danger enc-btn-lg-camel">Clear All Fields</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Build Scripts. -->
+    <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="../../../scripts/main.js" type="text/javascript"></script>
+    <script src="../../../scripts/color_picker.js" type="text/javascript"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>

@@ -1,0 +1,1706 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:500,400italic,700,400|Roboto+Slab);
+
+.tag {
+  font-size: 18px;
+  width:100%;
+  /*text-align:center;*/
+  position:absolute;
+  top:35%;
+  left: 35px;
+  color: #7b84a7;
+  z-index: 9999;
+}
+
+.imod-em-panel
+{
+    position: relative;
+    background-color: transparent;
+   /* margin-bottom: 15px;*/
+    height: 100%;
+    border-left: 0px solid #e0e0e0;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+}
+
+.imod-em-panel h3
+{
+    padding: 0;
+    margin: 0 0 15px;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-weight: 700
+}
+
+.imod-em-panel h4
+{
+    padding: 0;
+    margin: 15px 0 0;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px
+}
+
+.imod-em-panel-link
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: none
+}
+
+.imod-em-panel-link:focus, .imod-em-panel-link:hover
+{
+    background-color: #1e90ff;
+    opacity: .1;
+    transition: none
+}
+
+.imod-em-panel-footer
+{
+    border-top: 2px dotted #aaa;
+    color: #666;
+    text-align: center;
+    padding-top: 15px
+}
+
+.imod-em-panel-percentage
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px
+}
+
+.imod-em-panel-amount
+{
+    text-align: center;
+    font-size: 24px;
+    color: #aaa
+}
+
+.imod-em-panel-amount span
+{
+    font-size: 14px
+}
+
+.imod-em-panel-donut-chart
+{
+    height: 200px;
+    width: 100%;
+}
+
+.imod-em-stat-panel
+{
+    padding: 15px 0
+}
+
+.imod-em-stat-panel, .imod-em-stat-panel-amount
+{
+    text-align: center;
+    font-size: 24px;
+    color: #666
+}
+
+.imod-em-stat-panel h4
+{
+    margin: 0 0 15px
+}
+
+.imod-em-button-link
+{
+    position: relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #7d7d7d;
+   
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px
+}
+
+p.imod-em-button-link
+{
+    position: relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #9d9d9d;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: -5px;
+    margin-bottom: 10px
+}
+
+.imod-em-negative-panel .imod-em-button-link
+{
+    margin-bottom: 15px
+}
+
+.imod-em-negative-panel .imod-em-panel-amount span
+{
+    font-size: 18px
+}
+
+.imod-em-button-link i
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -20px;
+    height: 100%;
+    width: 20px;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box
+}
+
+.imod-em-panel-toggle
+{
+    position: absolute;
+    left: -40px;
+    top: 1pc
+}
+
+.imod-em-panel-toggle a
+{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    background-color: #ccc;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box
+}
+
+.imod-em-panel-toggle a:hover
+{
+    background-color: #aaa
+}
+
+.imod-em-panel-toggle a#expandDetails
+{
+    display: none
+}
+
+.collapsed .imod-em-panel-toggle a#expandDetails, .imod-em-panel-toggle a#collapseDetails
+{
+    display: block
+}
+
+.collapsed .imod-em-panel-toggle a#collapseDetails
+{
+    display: none
+}
+
+a.imod-em-callout-link
+{
+    background-color: #41a6e2;
+    background: linear-gradient(#41a6e2, #1e88c7);
+    color: #fff;
+    display: block;
+    padding: 20px 15px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #1b81be;
+    position: relative
+}
+
+a.imod-em-callout-link:focus, a.imod-em-callout-link:hover
+{
+    background-color: #64bff6;
+    background: linear-gradient(#64bff6, #26a5f2);
+    color: #fff;
+    text-decoration: none;
+    border-color: #41a6e2
+}
+
+a.imod-em-callout-link:focus
+{
+    outline: dotted;
+    outline-color: #000;
+    outline-width: thin;
+}
+
+a.imod-em-callout-link>i
+{
+    opacity: .8;
+    position: absolute;
+    right: 10px;
+    display: block;
+    top: 50%;
+    margin-top: -15px;
+    height: 30px;
+    line-height: 30px
+}
+
+a.imod-em-callout-link.disabled
+{
+    cursor: default
+}
+
+a.imod-em-callout-link.disabled, a.imod-em-callout-link.disabled:focus, a.imod-em-callout-link.disabled:hover
+{
+    background: linear-gradient(#eee, #e8e8e8);
+    border: 1px solid #ddd
+}
+
+a.imod-em-callout-link.disabled em
+{
+    display: block;
+    text-align: center;
+    font-size: 9pt;
+    line-height: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%
+}
+
+.imod-mobile-link-list a
+{
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    transition: none
+}
+
+.imod-mobile-link-list a:focus, .imod-mobile-link-list a:hover
+{
+    transition: none;
+    background-color: #41a6e2;
+    color: #fff;
+    text-decoration: none
+}
+
+.imod-mobile-link-list a i
+{
+    position: absolute;
+    right: 15px;
+    top: 20px
+}
+
+.imod-mobile-link-list a:focus em, .imod-mobile-link-list a:hover em
+{
+    color: #ddd
+}
+
+.imod-mobile-link-list a em
+{
+    display: block;
+    color: #aaa;
+    display: none
+}
+
+.imod-em-grid-list
+{
+    margin: 15px 0
+}
+
+.imod-em-grid-list table
+{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 1pc
+}
+
+.imod-em-grid-list table th
+{
+    text-align: left;
+    white-space: nowrap;
+    padding-right: 2em;
+    background-color: #f5f5f5;
+    padding: 0;
+    border: 1px solid #ddd;
+    color: #000;
+    padding: 30px 10px
+}
+
+.imod-em-grid-list table th.imod-selected
+{
+    background-color: #eee
+}
+
+.imod-em-grid-list table th div
+{
+    padding: 30px 10px
+}
+
+.imod-em-grid-list table th i
+{
+    margin-right: .25em;
+    color: #75bc45
+}
+
+.imod-em-grid-list table th i.imod-em-grid-list-sort
+{
+    color: #000
+}
+
+.imod-em-grid-list td
+{
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff
+}
+
+.imod-em-grid-list tr:nth-child(odd) td
+{
+    background-color: #f5f5f5
+}
+
+.imod-em-grid-list tr:hover td
+{
+    background-color: #def
+}
+
+.imod-em-grid-list .imod-em-grid-date, .imod-em-grid-list .imod-em-grid-time
+{
+    width: 125px;
+    text-align: right
+}
+
+.imod-em-grid-list-tags a
+{
+    font-size: .8em
+}
+
+.imod-em-grid-list-options
+{
+    float: right;
+    font-size: 14px
+}
+
+.imod-em-details
+{
+    max-height: 125pc;
+    transition: 1s
+}
+
+.imod-em-details table
+{
+    border-top: 1px solid #ddd;
+    width: 100%
+}
+
+.imod-em-details table td
+{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    font-size: 1pc;
+    vertical-align: top
+}
+
+.imod-em-details .imod-em-details-label
+{
+    color: #666;
+    font-size: 14px;
+    padding-right: 20px;
+    padding-left: 5px;
+    padding-top: 9pt;
+    width: 15%;
+    min-width: 200px;
+    max-width: 75pt
+}
+
+.imod-em-details table td i
+{
+    color: #8cd552
+}
+
+.collapsed .imod-em-details
+{
+    max-height: 75pt;
+    overflow: hidden;
+    position: relative;
+    transition: .2s
+}
+
+.imod-em-details-sent
+{
+    float: right
+}
+
+.imod-em-details-sent-amount
+{
+    color: #8cd552
+}
+
+.imod-em-details-sent-label
+{
+    font-size: .7em;
+    font-weight: 400;
+    color: #666
+}
+
+table td.imod-em-align-right, table th.imod-em-align-right
+{
+    text-align: right
+}
+
+table td.imod-em-align-center, table th.imod-em-align-center
+{
+    text-align: center
+}
+
+table th.imod-em-grid-action-column
+{
+    text-align: center;
+    padding: inherit;
+    width: 75px
+}
+
+.imod-em-split-25-75
+{
+    position: relative;
+    width: 100%;
+    margin: 30px 0
+}
+
+.imod-em-split-25-75>br
+{
+    clear: left
+}
+
+.imod-em-split-25-75>div
+{
+    float: left;
+    box-sizing: border-box;
+    width: 75%;
+    padding-left: 5px
+}
+
+.imod-em-split-25-75>div:first-child
+{
+    width: 25%;
+    padding-right: 5px;
+    padding-left: 0
+}
+
+.imod-em-split-66-34
+{
+    position: relative;
+    width: 100%
+}
+
+.imod-em-split-66-34>br
+{
+    clear: left
+}
+
+.imod-em-split-66-34>div
+{
+    float: left;
+    width: 34%;
+    box-sizing: border-box;
+    padding-left: 5px
+}
+
+.imod-em-split-66-34>div:first-child
+{
+    padding-right: 5px;
+    padding-left: 0;
+    width: 66%
+}
+
+.imod-em-split-60-40
+{
+    position: relative;
+    width: 100%
+}
+
+.imod-em-split-60-40>br
+{
+    clear: left
+}
+
+.imod-em-split-60-40>div
+{
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    position: relative
+}
+
+.imod-em-split-60-40>div:first-child
+{
+    padding-right: 5px;
+    padding-left: 0;
+    width: 60%
+}
+
+.imod-em-split-80-20
+{
+    position: relative;
+    width: 100%
+}
+
+.imod-em-split-80-20>br
+{
+    clear: left
+}
+
+.imod-em-split-80-20>div
+{
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    height: 100%;
+    position: relative
+}
+
+.imod-em-split-80-20>div:first-child
+{
+    padding-right: 5px;
+    padding-left: 0;
+    width: 80%
+}
+
+.imod-em-split-60-20-20
+{
+    position: relative;
+    width: 100%
+}
+
+.imod-em-split-60-20-20>br
+{
+    clear: left
+}
+
+.imod-em-split-60-20-20>div
+{
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 100%;
+    position: relative
+}
+
+.imod-em-split-60-20-20>div:first-child
+{
+    padding-left: 0;
+    width: 60%
+}
+
+.imod-em-split-60-20-20>div:last-child
+{
+    padding-right: 0
+}
+
+.imod-em-split-2, .imod-em-split-3, .imod-em-split-4, .imod-em-split-5, .imod-em-split-6, .imod-em-split-7, .imod-em-split-8
+{
+    position: relative;
+    width: 100%
+}
+
+.imod-em-split-2>div
+{
+    width: 50%
+}
+
+.imod-em-split-3>div
+{
+    width: 33.33%
+}
+
+.imod-em-split-4>div
+{
+    width: 25%
+}
+
+.imod-em-split-5>div
+{
+    width: 20%;
+}
+
+.imod-em-split-6>div
+{
+    width: 16.66%
+}
+
+.imod-em-split-7>div
+{
+    width: 14.285%
+}
+
+.imod-em-split-8>div
+{
+    width: 12.5%
+}
+
+.imod-em-split-2>div, .imod-em-split-3>div, .imod-em-split-4>div, .imod-em-split-5>div, .imod-em-split-6>div, .imod-em-split-7>div, .imod-em-split-8>div
+{
+    float: left;
+    box-sizing: border-box;
+    padding-left: 10px
+}
+
+.imod-em-split-2>br, .imod-em-split-3>br, .imod-em-split-4>br, .imod-em-split-5>br, .imod-em-split-6>br, .imod-em-split-7>br, .imod-em-split-8>br
+{
+    clear: left
+}
+
+.imod-em-split-2>div:first-child, .imod-em-split-3>div:first-child, .imod-em-split-4>div:first-child, .imod-em-split-5>div:first-child, .imod-em-split-6>div:first-child, .imod-em-split-7>div:first-child, .imod-em-split-8>div:first-child
+{
+    padding-left: 0
+}
+
+.imod-em-height-500 .imod-em-panel
+{
+    min-height: 500px
+}
+
+.imod-em-height-550 .imod-em-panel
+{
+    min-height: 550px
+}
+
+.imod-em-height-600 .imod-em-panel
+{
+    min-height: 600px
+}
+
+.imod-em-height-650 .imod-em-panel
+{
+    min-height: 650px
+}
+
+.imod-em-color-sent
+{
+    color: #8cd552!important
+}
+
+.imod-em-background-color-sent
+{
+    background-color: #8cd552
+}
+
+.imod-em-color-open
+{
+    color: #fabe42!important
+}
+
+.imod-em-background-color-open
+{
+    background-color: #fabe42!important
+}
+
+.imod-em-color-click
+{
+    color: #865fa0!important
+}
+
+.imod-em-background-color-click
+{
+    background-color: #865fa0!important
+}
+
+.imod-em-color-unique-click
+{
+    color: #64bff6!important
+}
+
+.imod-em-background-color-unique-click
+{
+    background-color: #64bff6!important
+}
+
+.imod-em-color-conversion
+{
+    color: #ff8a44!important
+}
+
+.imod-em-background-color-conversion
+{
+    background-color: #ff8a44!important
+}
+
+.imod-em-sent-panel
+{
+    border-top: 0px solid #79ba54
+}
+
+.imod-em-delivered-panel
+{
+    border-top: 0px solid hotpink
+}
+
+.imod-em-opens-panel, .imod-em-unique-opens-panel
+{
+    border-top: 0px solid #fabe42
+}
+
+.imod-em-clicks-panel
+{
+    border-top: 0px solid #865fa0
+}
+
+.imod-em-unique-clicks-panel
+{
+    border-top: 0px solid #64bff6
+}
+
+.imod-em-conversions-panel
+{
+    border-top: 0px solid #ff8a44
+}
+
+.imod-em-conversions-panel-donations, .imod-em-conversions-panel-memberships, .imod-em-conversions-panel-profileupdates, .imod-em-conversions-panel-registrations
+{
+    border-top: 0px solid #ffca84
+}
+
+.imod-em-negative-panel
+{
+    border-top: 0px solid #f66
+}
+
+.imod-em-adspace-panel
+{
+    border-top: 0px solid #000
+}
+
+.imod-em-sent-panel .imod-em-button-link i
+{
+    color: #79ba54
+}
+
+.imod-em-delivered-panel .imod-em-button-link i
+{
+    color: hotpink
+}
+
+.imod-em-opens-panel .imod-em-button-link i
+{
+    color: #fabe42
+}
+
+.imod-em-clicks-panel .imod-em-button-link i
+{
+    color: #865fa0
+}
+
+.imod-em-unique-clicks-panel .imod-em-button-link i
+{
+    color: #64bff6
+}
+
+.imod-em-conversions-panel .imod-em-button-link i
+{
+    color: #ff8a44
+}
+
+.imod-em-conversions-panel-donations .imod-em-button-link i, .imod-em-conversions-panel-memberships .imod-em-button-link i, .imod-em-conversions-panel-profileupdates .imod-em-button-link i, .imod-em-conversions-panel-registrations .imod-em-button-link i
+{
+    border-top: 3px solid #ffca84
+}
+
+.imod-em-negative-panel .imod-em-button-link i
+{
+    color: #f66
+}
+
+.imod-em-adspace-panel .imod-em-button-link i
+{
+    color: #000
+}
+
+.imod-em-adspace-panel .imod-em-button-link
+{
+    margin-bottom: 0
+}
+
+@media (max-width:1200px) {
+
+.imod-em-negative-panel>div
+{
+    float: none
+}
+
+.imod-em-negative-panel .imod-em-grey-panel-donut-chart
+{
+    width: 100%;
+    height: 150px
+}
+
+.imod-em-negative-panel-summary
+{
+    width: auto
+}
+
+.imod-em-adspace-panel>div
+{
+    float: none
+}
+
+.imod-em-adspace-panel-summary
+{
+    width: auto
+}
+}
+
+@media (max-width:1024px) {
+
+.imod-em-opens-panel .imod-em-grey-panel-donut-chart
+{
+    height: 200px
+}
+
+.imod-em-panel
+{
+    padding: 15px
+}
+
+.imod-em-button-link
+{
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 20px
+}
+
+.imod-em-button-link i
+{
+    right: -10px
+}
+
+.imod-em-panel-amount, .imod-em-panel-percentage
+{
+    font-size: 20px
+}
+
+.imod-em-panel-amount span
+{
+    font-size: 1pc
+}
+
+.imod-em-grid-list table th
+{
+    white-space: normal
+}
+
+a.imod-em-callout-link
+{
+    font-size: 1pc
+}
+
+.imod-em-split-break-1024>div
+{
+    float: none;
+    width: 100%;
+    padding-left: 0
+}
+
+.imod-em-split-break-1024>br
+{
+    clear: left
+}
+
+.imod-em-height-500 .imod-em-panel, .imod-em-height-550 .imod-em-panel, .imod-em-height-600 .imod-em-panel, .imod-em-height-650 .imod-em-panel
+{
+    height: auto
+}
+
+.imod-em-big
+{
+    font-size: 2pc
+}
+
+.imod-em-big em
+{
+    font-size: 18px
+}
+
+.imod-em-big-2
+{
+    font-size: 24px
+}
+
+.imod-em-big-3, .imod-em-panel h4
+{
+    font-size: 18px
+}
+
+.imod-em-stat-panel
+{
+    padding: 15px 5px
+}
+
+.imod-em-stat-panel h4
+{
+    font-size: 1pc
+}
+}
+
+.Select
+{
+    position: relative
+}
+
+.Select, .Select div, .Select input, .Select span
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.Select.is-disabled>.Select-control
+{
+    background-color: #f9f9f9
+}
+
+.Select.is-disabled>.Select-control:hover
+{
+    box-shadow: none
+}
+
+.Select.is-disabled .Select-arrow-zone
+{
+    cursor: default;
+    pointer-events: none;
+    opacity: .35
+}
+
+.Select-control
+{
+    background-color: #fff;
+    border-color: #d9d9d9 #ccc #b3b3b3;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: default;
+    display: table;
+    border-spacing: 0;
+    border-collapse: separate;
+    height: 36px;
+    outline: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+.Select-control:hover
+{
+    box-shadow: 0 1px 0 rgba(0,0,0,.06)
+}
+
+.Select-control .Select-input:focus
+{
+    outline: 0
+}
+
+.is-searchable.is-open>.Select-control
+{
+    cursor: text
+}
+
+.is-open>.Select-control
+{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background: #fff;
+    border-color: #b3b3b3 #ccc #d9d9d9
+}
+
+.is-open>.Select-control>.Select-arrow
+{
+    border-color: transparent transparent #999;
+    border-width: 0 5px 5px
+}
+
+.is-searchable.is-focused:not(.is-open)>.Select-control
+{
+    cursor: text
+}
+
+.is-focused:not(.is-open)>.Select-control
+{
+    border-color: #007eff;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0 3px rgba(0,126,255,.1)
+}
+
+.Select--single>.Select-control .Select-value, .Select-placeholder
+{
+    bottom: 0;
+    color: #aaa;
+    left: 0;
+    line-height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label
+{
+    color: #333
+}
+
+.has-value.Select--single>.Select-control .Select-value a.Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label
+{
+    cursor: pointer;
+    text-decoration: none
+}
+
+.has-value.Select--single>.Select-control .Select-value a.Select-value-label:focus, .has-value.Select--single>.Select-control .Select-value a.Select-value-label:hover, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label:focus, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label:hover
+{
+    color: #007eff;
+    outline: 0;
+    text-decoration: underline
+}
+
+.Select-input
+{
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle
+}
+
+.Select-input>input
+{
+    width: 100%;
+    background: none transparent;
+    border: 0 none;
+    box-shadow: none;
+    cursor: default;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    outline: 0;
+    line-height: 14px;
+    padding: 8px 0 9pt;
+    -webkit-appearance: none
+}
+
+.is-focused .Select-input>input
+{
+    cursor: text
+}
+
+.has-value.is-pseudo-focused .Select-input
+{
+    opacity: 0
+}
+
+.Select-control:not(.is-searchable)>.Select-input
+{
+    outline: 0
+}
+
+.Select-loading-zone
+{
+    cursor: pointer;
+    display: table-cell;
+    text-align: center
+}
+
+.Select-loading, .Select-loading-zone
+{
+    position: relative;
+    vertical-align: middle;
+    width: 1pc
+}
+
+.Select-loading
+{
+    -webkit-animation: Select-animation-spin .4s infinite linear;
+    -o-animation: Select-animation-spin .4s infinite linear;
+    animation: Select-animation-spin .4s infinite linear;
+    height: 1pc;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-right-color: #333;
+    display: inline-block
+}
+
+.Select-clear-zone
+{
+    -webkit-animation: Select-animation-fadeIn .2s;
+    -o-animation: Select-animation-fadeIn .2s;
+    animation: Select-animation-fadeIn .2s;
+    color: #999;
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 17px
+}
+
+.Select-clear-zone:hover
+{
+    color: #d0021b
+}
+
+.Select-clear
+{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1
+}
+
+.Select--multi .Select-clear-zone
+{
+    width: 17px
+}
+
+.Select-arrow-zone
+{
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 25px;
+    padding-right: 5px
+}
+
+.Select-arrow
+{
+    border-color: #999 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 2.5px;
+    display: inline-block;
+    height: 0;
+    width: 0
+}
+
+.Select-arrow-zone:hover>.Select-arrow, .is-open .Select-arrow
+{
+    border-top-color: #666
+}
+
+.Select--multi .Select-multi-value-wrapper
+{
+    display: inline-block
+}
+
+.Select .Select-aria-only
+{
+    display: inline-block;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+    overflow: hidden
+}
+@-webkit-keyframes Select-animation-fadeIn {
+0% {
+opacity:0
+}
+to {
+opacity:1
+}
+}
+@keyframes Select-animation-fadeIn {
+0% {
+opacity:0
+}
+to {
+opacity:1
+}
+}
+
+.Select-menu-outer
+{
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top-color: #e6e6e6;
+    box-shadow: 0 1px 0 rgba(0,0,0,.06);
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-height: 200px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch
+}
+
+.Select-menu
+{
+    max-height: 198px;
+    overflow-y: auto
+}
+
+.Select-option
+{
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #666;
+    cursor: pointer;
+    display: block;
+    padding: 8px 10px
+}
+
+.Select-option:last-child
+{
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.Select-option.is-selected
+{
+    background-color: #f5faff;
+    background-color: rgba(0,126,255,.04);
+    color: #333
+}
+
+.Select-option.is-focused
+{
+    background-color: #ebf5ff;
+    background-color: rgba(0,126,255,.08);
+    color: #333
+}
+
+.Select-option.is-disabled
+{
+    color: #ccc;
+    cursor: default
+}
+
+.Select-noresults
+{
+    box-sizing: border-box;
+    color: #999;
+    cursor: default;
+    display: block;
+    padding: 8px 10px
+}
+
+.Select--multi .Select-input
+{
+    vertical-align: middle;
+    margin-left: 10px;
+    padding: 0
+}
+
+.Select--multi.has-value .Select-input
+{
+    margin-left: 5px
+}
+
+.Select--multi .Select-value
+{
+    background-color: #ebf5ff;
+    background-color: rgba(0,126,255,.08);
+    border-radius: 2px;
+    border: 1px solid #c2e0ff;
+    border: 1px solid rgba(0,126,255,.24);
+    color: #007eff;
+    display: inline-block;
+    font-size: .9em;
+    line-height: 1.4;
+    margin-left: 5px;
+    margin-top: 5px;
+    vertical-align: top
+}
+
+.Select--multi .Select-value-icon, .Select--multi .Select-value-label
+{
+    display: inline-block;
+    vertical-align: middle
+}
+
+.Select--multi .Select-value-label
+{
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: default;
+    padding: 2px 5px
+}
+
+.Select--multi a.Select-value-label
+{
+    color: #007eff;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.Select--multi a.Select-value-label:hover
+{
+    text-decoration: underline
+}
+
+.Select--multi .Select-value-icon
+{
+    cursor: pointer;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-right: 1px solid #c2e0ff;
+    border-right: 1px solid rgba(0,126,255,.24);
+    padding: 1px 5px 3px
+}
+
+.Select--multi .Select-value-icon:focus, .Select--multi .Select-value-icon:hover
+{
+    background-color: #d8eafd;
+    background-color: rgba(0,113,230,.08);
+    color: #0071e6
+}
+
+.Select--multi .Select-value-icon:active
+{
+    background-color: #c2e0ff;
+    background-color: rgba(0,126,255,.24)
+}
+
+.Select--multi.is-disabled .Select-value
+{
+    background-color: #fcfcfc;
+    border: 1px solid #e3e3e3;
+    color: #333
+}
+
+.Select--multi.is-disabled .Select-value-icon
+{
+    cursor: not-allowed;
+    border-right: 1px solid #e3e3e3
+}
+
+.Select--multi.is-disabled .Select-value-icon:active, .Select--multi.is-disabled .Select-value-icon:focus, .Select--multi.is-disabled .Select-value-icon:hover
+{
+    background-color: #fcfcfc
+}
+@keyframes Select-animation-spin {
+to {
+transform:rotate(1turn);
+-webkit-transform:rotate(1turn)
+}
+}
+
+#ContentContainer
+{
+    padding: 0!important
+}
+
+#divHelloWorld
+{
+    font-size: xx-large;
+    border: 2px solid #000;
+    padding: 3px
+}
+
+a.pagerLink
+{
+    cursor: pointer
+}
+
+div.em-info-message
+{
+    background-color: #c4e7fc;
+    color: #085786;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex
+}
+
+div.em-info-message i
+{
+    margin-top: .2em
+}
+
+div.em-info-message p
+{
+    margin: 0
+}
+
+.bm-cross-button
+{
+    height: auto!important;
+    width: 95%!important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #525252;
+    margin-left: 2.5%;
+    padding: 15px 20px
+}
+
+.bm-cross-button>button:active
+{
+    border: none!important
+}
+
+.bm-cross-button .bm-cross
+{
+    color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    float: left
+}
+
+.bm-cross-button .bm-cross i
+{
+    margin-right: 30px
+}
+
+.bm-burger-button
+{
+    position: relative;
+    width: 36px;
+    height: 30px;
+    float: left;
+    margin: 20px 0 0 30px
+}
+
+.bm-burger-bars
+{
+    background: #373a47
+}
+
+.bm-menu
+{
+    background: #2b2823;
+    padding: 5pc 0 0
+}
+
+.bm-item-list
+{
+    color: #fff;
+    height: auto!important
+}
+
+.bm-item-list>ul>li
+{
+    padding: 0
+}
+
+.bm-item-list>ul>li:first-child
+{
+    padding: 0 0 0 20px
+}
+
+.bm-item-list ul
+{
+    list-style-type: none;
+    padding: 0 0 0 8px;
+    margin: 0
+}
+
+.bm-item-list ul li
+{
+    list-style-type: none;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400
+}
+
+.bm-item-list ul li ul
+{
+    padding-left: 20px
+}
+
+.bm-item-list ul li ul li:first-child
+{
+    padding-top: 0
+}
+
+.bm-item-list ul li ul li .menu-item
+{
+    padding: 5px 0 5px 60px
+}
+
+.bm-item-list .menu-item
+{
+    color: #fff;
+    width: 100%;
+    float: left;
+    padding: 5px 0 5px 40px;
+    box-sizing: border-box
+}
+
+.bm-item-list .menu-item i
+{
+    display: none
+}
+
+.bm-item-list .menu-item.active
+{
+    background: #474747
+}
+
+.bm-item-list .menu-item.active i
+{
+    display: block;
+    font-size: 24px;
+    float: right
+}
+
+.imod-admin-content
+{
+    width: 100%;
+    float: left
+}
+
+.aggregate-metrics, .metrics-filters
+{
+    float: left;
+    width: 50%
+}
+
+.metrics-filters h2
+{
+    margin-bottom: 2pc
+}
+
+.aggregate-metrics li, .aggregate-metrics ul
+{
+    padding: 0;
+    list-style-type: none
+}
+
+.aggregate-metrics .metrics-list
+{
+    padding-top: 0;
+    margin-top: 0
+}
+
+.aggregate-metrics ul
+{
+    float: left;
+    min-width: 30%;
+    margin-right: 50px;
+    margin-top: 0
+}
+
+.aggregate-metrics ul li
+{
+    font-size: 20px;
+    line-height: 40px;
+    color: #aeaeae
+}
+
+.aggregate-metrics ul li span
+{
+    float: right;
+    padding-left: 20px;
+    font-weight: 700;
+    color: #666
+}
+
+.Select div.Select-control
+{
+    position: relative;
+    width: 375px;
+    border-radius: 30px;
+    border: 1px solid #979797;
+    padding: 0 10px 0 20px;
+    box-sizing: border-box
+}
+
+.Select div.Select-control .Select-input
+{
+    padding-left: 0
+}
+
+.Select div.Select-control .Select-placeholder, .Select div.Select-control .Select-value
+{
+    padding-left: 20px
+}
+
+.Select .Select-menu-outer
+{
+    width: 375px;
+    margin-top: 5px;
+    border-radius: 4px
+}
+
+.searchBox
+{
+    position: relative
+}
+
+.searchBox input
+{
+    line-height: 68px;
+    height: 36px;
+    width: 375px;
+    border-radius: 30px;
+    border: 1px solid #979797;
+    padding: 0 40px 0 20px;
+    box-sizing: border-box;
+    max-width: 100%
+}
+
+.searchBox i
+{
+    color: #979797;
+    position: absolute;
+    right: 20px;
+    top: -7px;
+    vertical-align: text-top;
+    height: 36px;
+    line-height: 36px
+}
+
+.echart-section
+{
+    cursor: default!important
+}
+
+body
+{
+    padding: 0
+}
+
+.imod-admin-content-main
+{
+    padding: 15px 6pc 50px 30px;
+    display: flex;
+    flex-direction: column
+}
+
+.loading
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.15);
+    z-index: 20
+}
+
+.loading i
+{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75pt;
+    color: #555;
+    margin-left: -4pc;
+    margin-top: -50px
+}

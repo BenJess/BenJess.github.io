@@ -1,0 +1,37 @@
+.content-wrapper-sm {
+    position: relative;
+    max-width: 768px;
+    margin: auto;
+    padding-top: 15px 30px 50px 30px;
+}
+
+.content-wrapper {
+    position: relative;
+    max-width: 1360px;
+    margin: auto;
+    padding-top: 15px 30px 50px 30px;
+}
+
+.inner-content-wrapper-sm {
+    height: auto;
+    margin: auto;
+    max-width: 768px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.inner-content-wrapper {
+    height: auto;
+    margin: auto;
+    min-width: 900px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.inner-content-wrapper-transparent {
+    height: auto;
+    margin: auto;
+    min-width: 900px;
+    padding: 30px;
+    background-color: transparent;
+}

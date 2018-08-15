@@ -1,0 +1,113 @@
+.checkbox input[type=checkbox] + label {
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 30px;
+    line-height: 35px;
+}
+
+.checkbox input[type=checkbox] {
+    display: none;
+}
+
+.checkbox input[type=checkbox] {
+    display: none;
+}
+
+.checkbox input[type=checkbox] + label:before {
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    display: block;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    color: #7ed321;
+    padding: 1px 2px 2px 2px;
+    line-height: 22px;
+    width: 26px;
+    height: 26px;
+    content: "";
+    background-color: #fff;
+    margin: 5px -30px 0px -30px;
+}
+
+.checkbox input[type=checkbox]:checked + label:before {
+    content: "\F00C";
+}
+
+.checkbox-email-tile input[type=checkbox] + label {
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 30px;
+    line-height: 35px;
+}
+
+.checkbox-email-tile input[type=checkbox] {
+    display: none;
+}
+
+.checkbox-email-tile input[type=checkbox] {
+    display: none;
+}
+
+.checkbox-email-tile input[type=checkbox] + label:before {
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #7ed321;
+    padding: 1px 2px 2px 2px;
+    line-height: 22px;
+    width: 26px;
+    height: 26px;
+    content: "";
+    background-color: #fff;
+    margin: 20px 0 0 -30px;
+}
+
+.checkbox-email-tile input[type=checkbox]:checked + label:before {
+    content: "\F00C";
+}
+
+.radio input[type=radio] {
+    display: none;
+}
+
+.radio input[type=radio] + label {
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    line-height: 35px;
+}
+
+.radio input[type=radio] + label span {
+    font-family: FontAwesome;
+    font-size: 16px;
+    position: absolute;
+    display: block;
+    border: 1px solid #bbb;
+    border-radius: 100px;
+    color: #7ed321;
+    padding: 1px 1px 1px 5px;
+    line-height: 22px;
+    width: 26px;
+    height: 26px;
+    content: "";
+    background-color: #fff;
+    margin: 5px -30px 0px -30px;
+}
+
+.radio input[type=radio]:checked + label span:before {
+    content: "\F111";
+}
+
+.radio label {
+    min-height: 20px;
+    padding-left: 30px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.templatebox {
+    transition: all .2s ease-in-out;
+}
+
+.templatebox {
+    text-align: center;
+    width: 175px;
+}
+
+.templatebox:hover {
+    transform: scale(1.05);
+}
+
+.tbclicked {
+    border-radius: 15px;
+    border: 4px solid rgba(51, 122, 183, 0.8);
+}

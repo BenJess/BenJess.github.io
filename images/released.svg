@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="235px" height="73px" viewBox="0 0 235 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>released</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="235" height="51"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.0" transform="translate(0.000000, -133.000000)">
+            <g id="released" transform="translate(0.000000, 133.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill-opacity="0.499688632" fill="#397AF2" xlink:href="#path-1"></use>
+                <polygon id="shadow" fill="#0B3D99" opacity="0.645493659" mask="url(#mask-2)" points="73.4023438 25.6777344 100 51 73.4023438 51"></polygon>
+                <circle id="Oval" fill="#397AF2" cx="45.5" cy="40.5" r="32.5"></circle>
+                <polygon id="Page-1" fill="#FEFEFE" points="57.6285231 28 39.3427283 46.4126343 33.3714769 40.3852639 29 44.7818455 39.1629087 55 39.3427283 54.8160296 39.5318489 55 62 32.3965816"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

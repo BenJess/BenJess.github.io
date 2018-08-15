@@ -1,300 +1,204 @@
-(function(){
-    
-        function Minimalist(config) {
-    
-            this.config = {};
-            this.config.ajaxTransition    = config.ajaxTransition || false;
-            this.config.fixedMobileHeader = config.fixedMobileHeader || false;
-    
-            this.dom = {};
-            this.dom.overlay 			= document.querySelector('.overlay');
-            this.dom.longLoading 		= this.dom.overlay.querySelector('.long-loading-container');
-            this.dom.containerToInsert 	= document.querySelector('.content-insert');
-    
-            document.addEventListener('DOMContentLoaded', function(){
-                this.initTestimonialSlider();
-            }.bind(this));
-    
-            this.hostName      = location.hostname;
-            this.loadTimeout   = null;
-            this.xhttp         = null;
-            this.pageLoaded    = null;
-            this.mobileNavOpen = false;
-            this.isBack        = false;
-    
-            this.oldLinks = [];
-    
-            if (this.config.ajaxTransition) {
-                window.onpopstate = function() {
-    
-                    if (this.oldLinks.length > 0) {
-    
-                        this.isBack = true;
-                        this.handleUrl(this.oldLinks[this.oldLinks.length - 1]);
+// Date Picker //
+
+$(function () {
+    var date_input = $('input[name="date"]'); //our date input has the name "date"
+    var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : 'body';
+    var options = {
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+    };
+    date_input.datepicker(options);
+})
+
+// Modal Resize to Children //
+
+$(function () {
+
+    $('#demo-modal-3').on('shown.bs.modal', function () {
+        $(this).find('.modal-dialog').css({
+            width: 'auto',
+            height: 'auto',
+            'max-height': '100%'
+        });
+    });
+});
+
+// Prog Indicator //
+
+$(function () {
+
+    var navListItems = $('ul.setup-panel li a'),
+        allWells = $('.setup-content');
+
+    allWells.hide();
+
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this).closest('li');
+
+        if (!$item.hasClass('disabled')) {
+            navListItems.closest('li').removeClass('active arrow_box');
+            $item.addClass('active arrow_box');
+            allWells.hide();
+            $target.show();
+        }
+    });
+
+    $('ul.setup-panel li.active.arrow_box a').trigger('click');
+
+    $('#activate-step-2').on('click', function (e) {
+        $('ul.setup-panel li:eq(1)').removeClass('disabled');
+        $('ul.setup-panel li:eq(0)').addClass('disabled');
+        $('ul.setup-panel li a[href="#step-2"]').trigger('click');
+
+    })
+    $('#activate-step-3').on('click', function (e) {
+        $('ul.setup-panel li:eq(2)').removeClass('disabled');
+        $('ul.setup-panel li:eq(1)').addClass('disabled');
+        $('ul.setup-panel li a[href="#step-3"]').trigger('click');
+
+    })
+    $('#activate-step-1').on('click', function (e) {
+        $('ul.setup-panel li:eq(0)').removeClass('disabled');
+        $('ul.setup-panel li:eq(2)').addClass('disabled');
+        $('ul.setup-panel li a[href="#step-1"]').trigger('click');
+
+    })
+});
+
+// Multi-pane Modal //
+
++
+
+    function ($) {
+        'use strict';
+
+        var modals = $('.modal.multi-step');
+
+        modals.each(function (idx, modal) {
+            var $modal = $(modal);
+            var $buttons = $modal.find('button.step');
+            var total_num_steps = $buttons.length;
+            var $progress = $modal.find('.m-progress');
+            var $progress_bar = $modal.find('.m-progress-bar');
+            var $progress_stats = $modal.find('.m-progress-stats');
+            var $progress_current = $modal.find('.m-progress-current');
+            var $progress_total = $modal.find('.m-progress-total');
+            var $progress_complete = $modal.find('.m-progress-complete');
+            var reset_on_close = $modal.attr('reset-on-close') === 'true';
+
+            function reset() {
+                $modal.find('.step').hide();
+                $modal.find('[data-step]').hide();
+            }
+
+            function completeSteps() {
+                $progress_stats.hide();
+                $progress_complete.show();
+                $modal.find('.progress-text').animate({
+                    top: '-2em'
+                });
+                $modal.find('.complete-indicator').animate({
+                    top: '-2em'
+                });
+                $progress_bar.addClass('completed');
+            }
+
+            function getPercentComplete(current_step, total_steps) {
+                return Math.min(current_step / total_steps * 100, 100) + '%';
+            }
+
+            function updateProgress(current, total) {
+                $progress_bar.animate({
+                    width: getPercentComplete(current, total)
+                });
+                if (current - 1 >= total_num_steps) {
+                    completeSteps();
+                } else {
+                    $progress_current.text(current);
+                }
+
+                $progress.find('[data-progress]').each(function () {
+                    var dp = $(this);
+                    if (dp.data().progress <= current - 1) {
+                        dp.addClass('completed');
+                    } else {
+                        dp.removeClass('completed');
                     }
-                }.bind(this);
-    
-                this.initPageTransition();
+                });
             }
-            
-            this.initNavigation();
-        }
-    
-        Minimalist.prototype.initTestimonialSlider = function() {
-    
-            var owlContainer = $('.testimonials');
-    
-            if (owlContainer.length <= 0 ) {
-                return null;
-            }
-    
-            owlContainer.owlCarousel({ 
-                loop:    true,
-                nav:     true,
-                navText: ['', ''],
-                items:   1
-            });
-        }
-    
-        Minimalist.prototype.initPageTransition = function() {
-    
-            var links, link, url;
-    
-            links = document.querySelectorAll('a');
-    
-            if (links.length <= 0 ) {
-                return null;
-            }
-    
-            for (var i = 0, max = links.length; i < max; i++) {
-    
-                link = links[i];
-                url  = link.href;
-    
-                if (url.indexOf('#') >= 0 || url.indexOf(this.hostName) < 0 || link.getAttribute('data-disabled') == 'true' || link.classList.contains('nav-list__link')) {
-                    continue;
+
+            function goToStep(step) {
+                reset();
+                var to_show = $modal.find('.step-' + step);
+                if (to_show.length === 0) {
+                    // at the last step, nothing else to show
+                    return;
                 }
-    
-                links[i].onclick = function(e){
-                    e.preventDefault();
-    
-                    var url = e.currentTarget.href;	
-    
-                    this.isBack = false;
-                    this.handleUrl(url);
-                }.bind(this);
-            }		
-        }
-    
-        Minimalist.prototype.handleUrl = function(url) {
-    
-            var transitionEnd;
-    
-            this.showOverlay();
-    
-            transitionEnd = function(){
-                this.request(url, this.pageTransition, this.pageFailedTransition);	
-                this.dom.overlay.removeEventListener('transitionend', transitionEnd);
-            }.bind(this);
-    
-            this.dom.overlay.addEventListener('transitionend', transitionEnd, false);
-    
-            this.loadTimeout = setTimeout(function() {
-    
-                var backBtn, directBtn;
-    
-                backBtn   = this.dom.longLoading.querySelector('.js-overlay-hide');
-                directBtn = this.dom.longLoading.querySelector('.js-direct');
-    
-                this.dom.longLoading.classList.remove('is-hidden');
-                this.dom.overlay.firstElementChild.classList.add('is-hidden');
-    
-                directBtn.onclick = function() {
-                    this.hideOverlay();
-                    this.xhttp.removeEventListener('load', this.pageLoaded);
-                    location.replace(url);
-                }.bind(this);
-    
-                backBtn.onclick = function() {
-                    this.hideOverlay();
-                    this.xhttp.removeEventListener('load', this.pageLoaded);
-                }.bind(this);
-                
-            }.bind(this), 5000);    
-        }
-    
-        Minimalist.prototype.pageTransition = function(responseHTML, url) {
-    
-            var fragment;
-    
-            this.isLoaded = true;
-    
-            window.scrollTo(0, 0);
-            clearTimeout(this.loadTimeout);
-    
-            fragment = document.createElement('div');
-            fragment.innerHTML = responseHTML;
-    
-            responseContainer = fragment.querySelector('.content-insert');
-            this.dom.containerToInsert.innerHTML = '';
-            this.dom.containerToInsert.innerHTML = responseContainer.innerHTML;
-    
-            this.dom.longLoading.classList.add('is-hidden');
-            this.hideOverlay();
-    
-            // Restart function
-            this.initPageTransition();
-            this.initNavigation();
-            this.initTestimonialSlider();
-    
-            if (this.isBack) {
-                this.oldLinks.pop();	
-            } else {
-                this.oldLinks.push(window.location.href);
+                to_show.show();
+                var current = parseInt(step, 10);
+                updateProgress(current, total_num_steps);
+                findFirstFocusableInput(to_show).focus();
             }
-    
-            window.history.pushState(null, null, url);    
-        }
-    
-        Minimalist.prototype.pageFailedTransition = function(message) {
-            console.error(message);
-        }
-    
-        Minimalist.prototype.showOverlay = function() {
-            this.dom.overlay.classList.remove('is-hidden');
-            this.dom.overlay.classList.add('is-vissible');
-        }
-    
-        Minimalist.prototype.hideOverlay = function() {
-            this.dom.overlay.classList.remove('is-vissible');
-            this.dom.overlay.classList.add('is-hidden'); 
-        }
-    
-    
-        // --------------------------- NAVIGATION ---------------------------
-        Minimalist.prototype.initNavigation = function(selector) {
-    
-            var navToggle;
-    
-            this.dom.navContainer = document.querySelector('.navigation');
-    
-            navToggle = this.dom.navContainer.querySelector('.nav__toggle');
-    
-            navToggle.addEventListener('click', function(){
-                this.toggleNavigation();
-            }.bind(this)); 
-    
-            if (this.config.fixedMobileHeader) {
-                this.initStickHeader();
+
+            function findFirstFocusableInput(parent) {
+                var candidates = [parent.find('input'), parent.find('select'),
+                parent.find('textarea'), parent.find('button')
+                ],
+                    winner = parent;
+                $.each(candidates, function () {
+                    if (this.length > 0) {
+                        winner = this[0];
+                        return false;
+                    }
+                });
+                return $(winner);
             }
-    
-            this.clickMenuItem();
-        }
-    
-        Minimalist.prototype.toggleNavigation = function() {
-    
-            if (!this.dom.navContainer.classList.contains('is-open')) {
-                this.dom.navContainer.classList.add('is-open');
-                document.body.classList.add('nav-open');
-                this.mobileNavOpen = true;
-            } else {
-                this.dom.navContainer.classList.remove('is-open');
-                document.body.classList.remove('nav-open');
-                this.mobileNavOpen = false;
+
+            function bindEventsToModal($modal) {
+                var data_steps = [];
+                $('[data-step]').each(function () {
+                    var step = $(this).data().step;
+                    if (step && $.inArray(step, data_steps) === -1) {
+                        data_steps.push(step);
+                    }
+                });
+
+                $.each(data_steps, function (i, v) {
+                    $modal.on('next.m.' + v, {
+                        step: v
+                    }, function (e) {
+                        goToStep(e.data.step);
+                    });
+                });
             }
-        }
-    
-        Minimalist.prototype.clickMenuItem = function() {
-            var navLinks = this.dom.navContainer.querySelectorAll('.nav-list__link');
-    
-            for (var i = 0, max = navLinks.length; i < max; i++) {
-                navLinks[i].addEventListener('click', function(){
-                    this.toggleNavigation();
-                }.bind(this));
-            }
-        }
-    
-        Minimalist.prototype.initStickHeader = function() {
-    
-            var header, headerHeight,
-                isStick = false;
-    
-            header = document.querySelector('.header');
-            headerHeight = header.offsetHeight;
-    
-            if ( !isStick && window.pageYOffset > headerHeight *2 ) {
-    
-                header.classList.add('is-stick');
-                isStick = true;
-            } else if (isStick && window.pageYOffset <= headerHeight) {
-    
-                header.classList.remove('is-stick');
-                isStick = false;
-            }
-    
-            window.addEventListener('scroll', function(e){
-                if ( !isStick && window.pageYOffset > headerHeight * 2) {
-                    header.classList.add('is-stick');
-                    isStick = true;
-                } else if (isStick && window.pageYOffset == 0) {
-                    header.classList.remove('is-stick');
-                    isStick = false;
+
+            function initialize() {
+                reset();
+                updateProgress(1, total_num_steps);
+                $modal.find('.step-1').show();
+                $progress_complete.hide();
+                $progress_total.text(total_num_steps);
+                bindEventsToModal($modal, total_num_steps);
+                $modal.data({
+                    total_num_steps: $buttons.length,
+                });
+                if (reset_on_close) {
+                    //Bootstrap 2.3.2
+                    $modal.on('hidden', function () {
+                        reset();
+                        $modal.find('.step-1').show();
+                    })
+                    //Bootstrap 3
+                    $modal.on('hidden.bs.modal', function () {
+                        reset();
+                        $modal.find('.step-1').show();
+                    })
                 }
-            });
-        }
-    
-        Minimalist.prototype.request = function(url, callback, failCallback) {
-    
-            this.xhttp = new XMLHttpRequest();
-    
-            this.pageLoaded = function() {
-    
-                if (this.xhttp.status >= 200 && this.xhttp.status < 400) {
-    
-                    callback.call(this, this.xhttp.responseText, url);
-                } else if (this.xhttp.status == 404) {
-                    failCallback(url);
-                }
-            }.bind(this);
-    
-            this.xhttp.addEventListener('load', this.pageLoaded);
-    
-            this.xhttp.onerror = function() {
-                failCallback(url);
-            };
-          
-            this.xhttp.open('GET', url, true);
-            this.xhttp.send();
-        }
-    
-        // matches polyfill
-        this.Element && function(ElementPrototype) {
-            ElementPrototype.matches = ElementPrototype.matches ||
-            ElementPrototype.matchesSelector ||
-            ElementPrototype.webkitMatchesSelector ||
-            ElementPrototype.msMatchesSelector ||
-            function(selector) {
-                var node = this, nodes = (node.parentNode || node.document).querySelectorAll(selector), i = -1;
-                while (nodes[++i] && nodes[i] != node);
-                return !!nodes[i];
             }
-        }(Element.prototype);
-        
-        // closest polyfill
-        this.Element && function(ElementPrototype) {
-            ElementPrototype.closest = ElementPrototype.closest ||
-            function(selector) {
-                var el = this;
-                while (el.matches && !el.matches(selector)) el = el.parentNode;
-                return el.matches ? el : null;
-            }
-        }(Element.prototype);
-    
-        /*-----------------------------------------------------------*/
-        /*--------------------- INITIALIZATION ----------------------*/
-        /*-----------------------------------------------------------*/
-        var minimalist = new Minimalist({
-            ajaxTransition:    true,
-            fixedMobileHeader: true,
-        });	
-    })();
+            initialize();
+        })
+    }(jQuery);

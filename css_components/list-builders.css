@@ -1,0 +1,83 @@
+.remaining-recipients {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.custom-list-builder {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.list-builder {
+    width: 100%;
+    float: left;
+}
+
+/* Added FEB 2018 */
+
+.list-items-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    padding: 5px 5px 35px;
+    width: 100%;
+    float: left;
+    min-height: 160px;
+}
+
+/* Added FEB 2018 */
+
+.list-items-box ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float: left;
+}
+
+.list-items-box ul li {
+    margin: 5px;
+    float: left;
+    background: #d0e6f1;
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: #426786;
+    font-size: 14px;
+}
+
+.list-items-box ul li i {
+    cursor: pointer;
+    text-shadow: 1px 1px hsla(0, 0%, 100%, 0.5);
+    color: #527796;
+}
+
+.list-items {
+    padding: 5px 5px 35px;
+    margin-top: 10px;
+}
+
+.list-items ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float: left;
+}
+
+.list-items ul li {
+    margin: 5px;
+    float: left;
+    background: #d0e6f1;
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: #426786;
+    font-size: 14px;
+}
+
+.list-items ul li i {
+    cursor: pointer;
+    text-shadow: 1px 1px hsla(0, 0%, 100%, 0.5);
+    color: #527796;
+}

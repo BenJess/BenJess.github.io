@@ -1,0 +1,72 @@
+/* Global Styles
+#################################################################################################### */
+
+.single-event-reports-box
+{
+    background-color: #fff;
+    padding: 30px;
+    margin: 0px 0px 30px 0px;
+}
+
+.single-event-reports-box-piecharts
+{
+    background-color: #fff;
+    text-align: center;
+    opacity: .5;
+    padding: 85px 30px 85px 30px;
+    margin: 70px 0px 30px 0px;
+}
+
+.single-event-reports-box-piecharts h1 {
+    opacity: .2;
+}
+
+.h4-top-margin {
+    font-weight: 400;
+}
+
+.arrow-breadcrumb {
+    margin-top: 15px;
+}
+
+.search-box-margin {
+    margin-top: 5px;
+}
+
+.active {
+    color: blue;
+}
+
+.enc-alert
+{
+    padding: 30px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px;
+}
+
+.contain-wrapper
+{
+    position: relative;
+    max-width: 768px !important;
+    margin: auto;
+    padding-top: 15px 30px 50px 30px;
+}
+
+.data-grid-container {
+    margin-top: 30px !important;
+}
+
+.radio+.radio {
+    margin-top: 15px;
+}
+
+.checkbox, .radio {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#checkbox1 {
+    margin-left: 30px;
+}

@@ -1,0 +1,50 @@
+.imod-pager {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.imod-pager ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.imod-pager ul li:first-child {
+    margin-right: 25px;
+}
+
+.imod-pager ul li:last-child {
+    margin-left: 25px;
+}
+
+.imod-pager ul li {
+    float: left;
+    margin: 0 5px;
+}
+
+.imod-pager ul li a {
+    border-radius: 20px;
+    color: #666;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    transition: none;
+    text-decoration: none;
+}
+
+.imod-pager ul li a:hover {
+    background-color: #999;
+    color: #fff;
+    text-decoration: none;
+}
+
+.imod-pager ul li.selected a {
+    background-color: #666;
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="235px" height="93px" viewBox="0 0 235 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>approved</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="235" height="51"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.0" transform="translate(0.000000, -133.000000)">
+            <g id="approved" transform="translate(0.000000, 133.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#AAC1D6" xlink:href="#path-1"></use>
+                <polygon id="shadow" fill="#3F6592" opacity="0.645493659" mask="url(#mask-2)" points="81.7480469 18.8964844 123.952288 61.1007251 96.2479018 61.1007251"></polygon>
+                <circle id="Oval" fill="#8CB8E0" cx="52" cy="50" r="43"></circle>
+                <polygon id="Page-1" fill="#FEFEFE" points="68.6945815 33.5 44.2785176 57.9450419 36.3054185 49.9429647 30.4684144 55.7799688 44.0384139 69.3458286 44.2785176 69.1015852 44.5310405 69.3458286 74.5315856 39.3370041"></polygon>
+                <text id="APPROVED" font-family="Roboto-Light, Roboto" font-size="24" font-weight="300" fill="#AAC1D6">
+                    <tspan x="101" y="82">APPROVED</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

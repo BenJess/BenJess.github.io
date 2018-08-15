@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="235px" height="73px" viewBox="0 0 235 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>sent</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="235" height="51"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.0">
+            <g id="sent">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill-opacity="0.5" fill="#2E9E49" xlink:href="#path-1"></use>
+                <polygon id="shadow" fill="#005314" opacity="0.645493659" mask="url(#mask-2)" points="69.1900024 19.7246094 100 51 69.1900024 51"></polygon>
+                <circle id="Oval" fill="#2E9E49" cx="45.5" cy="40.5" r="32.5"></circle>
+                <path d="M24,22 L30.8890993,54.3531798 L44.9896771,46.7108888 L24.4169902,22.652859 L48.6584904,44.7208907 L61,38.0666163 L24,22 Z M42.4386779,51.5183053 L49.3978596,59 L49.3978596,47.4196075 L42.4386779,51.5183053 Z" id="Page-1" fill="#FEFEFE" transform="translate(42.500000, 40.500000) scale(-1, 1) translate(-42.500000, -40.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

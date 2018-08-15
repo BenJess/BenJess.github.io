@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2018 style guide</title>
+
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="../../../styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <img src="images/bg.png" id="bg" alt="">
+  <button class="enc-btn basic btn-lg" data-toggle="modal" data-target="#demo-modal-3" id="wtf">Open Data Modal</button>
+  <form class="modal modal multi-step" id="demo-modal-3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&#9587;</button>
+          <h3 class="modal-title step-1" data-step="1">Dynamic Content</h3>
+          <h3 class="modal-title step-2" data-step="2">Dynamic Content | Events</h3>
+          <h3 class="modal-title step-3" data-step="3">Dynamic Content | Events</h3>
+        </div>
+        <div class="enc-modal-body step-1" data-step="1">
+          <div class="container-fluid">
+            <ul class="arrow-breadcrumb">
+              <li class="active">
+                <a href="#">Define Content</a>
+              </li>
+              <li>
+                <a href="#">Select Content</a>
+              </li>
+              <li>
+                <a href="#">Select Format</a>
+              </li>
+            </ul>
+            <h3>Select Content</h3>
+            <div class="dropdown">
+              <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Select Type
+                <span class="Select-arrow-zone pull-right">
+                  <span class="Select-arrow"></span>
+                </span>
+              </button>
+              <ul class="delux-dropdown-menu btn-block">
+                <li>
+                  <a href="#">Specific Content</a>
+                </li>
+                <li>
+                  <a href="#">Dynamic Content</a>
+                </li>
+              </ul>
+            </div>
+            <h3>Select Type</h3>
+            <div class="dropdown">
+              <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Select Type
+                <span class="Select-arrow-zone pull-right">
+                  <span class="Select-arrow"></span>
+                </span>
+              </button>
+              <ul class="delux-dropdown-menu btn-block">
+                <li>
+                  <a href="#">News</a>
+                </li>
+                <li>
+                  <a href="#">Events</a>
+                </li>
+              </ul>
+            </div>
+            <h3>Event Type</h3>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group input-group">
+                  <input type="text" class="form-control">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <select multiple class="form-control">
+                <option>Campus</option>
+                <option>Career Networking</option>
+                <option>Chapter - Albany</option>
+                <option>Chapter - Boston</option>
+                <option>Chapter - List 1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="enc-modal-body step-2" data-step="2">
+          <div class="modal-width"></div>
+          <div class="container-fluid">
+            <ul class="arrow-breadcrumb">
+              <li>
+                <a href="#">Define Content</a>
+              </li>
+              <li class="active">
+                <a href="#">Select Content</a>
+              </li>
+              <li>
+                <a href="#">Select Format</a>
+              </li>
+            </ul>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group input-group" style="float: left">
+                  <input type="text" class="form-control">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div style="float: right"> Emails selected
+                  <div class="enc-badge">10</div>
+                </div>
+              </div>
+            </div>
+            <div class="data-grid-container">
+              <ul class="data-grid-row">
+                <li class="column-header data-grid-column sm-column">Include Content</li>
+                <li class="column-header data-grid-column" style="color: #4a90e2">Event Name</li>
+                <li class="column-header data-grid-column" style="color: #4a90e2">Event Description</li>
+                <li class="column-header data-grid-column" style="color: #4a90e2">Creation Date</li>
+                <li class="column-header data-grid-column" style="color: #4a90e2">Display Date</li>
+                <li class="column-header data-grid-column" style="color: #4a90e2">Archive Date</li>
+              </ul>
+              <ul class="data-grid-row">
+                <li class="data-grid-column sm-column">
+                  <div class="checkbox">
+                    <input type="checkbox" id="1a" value="on">
+                    <label for="1a"></label>
+                  </div>
+                </li>
+                <li class="data-grid-column">Block Announcements</li>
+                <li class="data-grid-column">Day of giving announcements</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+              </ul>
+              <ul class="data-grid-row">
+                <li class="data-grid-column sm-column">
+                  <div class="checkbox">
+                    <input type="checkbox" id="2a" value="on">
+                    <label for="2a"></label>
+                  </div>
+                </li>
+                <li class="data-grid-column">Block Announcements</li>
+                <li class="data-grid-column">Day of giving announcements</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+              </ul>
+              <ul class="data-grid-row">
+                <li class="data-grid-column sm-column">
+                  <div class="checkbox">
+                    <input type="checkbox" id="3a" value="on">
+                    <label for="3a"></label>
+                  </div>
+                </li>
+                <li class="data-grid-column">Block Announcements</li>
+                <li class="data-grid-column">Day of giving announcements</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+              </ul>
+              <ul class="data-grid-row">
+                <li class="data-grid-column sm-column">
+                  <div class="checkbox">
+                    <input type="checkbox" id="4a" value="on">
+                    <label for="4a"></label>
+                  </div>
+                </li>
+                <li class="data-grid-column">Block Announcements</li>
+                <li class="data-grid-column">Day of giving announcements</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+              </ul>
+              <ul class="data-grid-row">
+                <li class="data-grid-column sm-column">
+                  <div class="checkbox">
+                    <input type="checkbox" id="5a" value="on">
+                    <label for="5a"></label>
+                  </div>
+                </li>
+                <li class="data-grid-column">Block Announcements</li>
+                <li class="data-grid-column">Day of giving announcements</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+              </ul>
+              <ul class="data-grid-row">
+                <li class="data-grid-column sm-column">
+                  <div class="checkbox">
+                    <input type="checkbox" id="6a" value="on">
+                    <label for="6a"></label>
+                  </div>
+                </li>
+                <li class="data-grid-column">Block Announcements</li>
+                <li class="data-grid-column">Day of giving announcements</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+              </ul>
+              <ul class="data-grid-row">
+                <li class="data-grid-column sm-column">
+                  <div class="checkbox">
+                    <input type="checkbox" id="7a" value="on">
+                    <label for="7a"></label>
+                  </div>
+                </li>
+                <li class="data-grid-column">Block Announcements</li>
+                <li class="data-grid-column">Day of giving announcements</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+              </ul>
+              <ul class="data-grid-row">
+                <li class="data-grid-column sm-column">
+                  <div class="checkbox">
+                    <input type="checkbox" id="8a" value="on">
+                    <label for="8a"></label>
+                  </div>
+                </li>
+                <li class="data-grid-column">Block Announcements</li>
+                <li class="data-grid-column">Day of giving announcements</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+                <li class="data-grid-column">02-02-1980 10:05am</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="imod-pager" style="margin-bottom: 15px">
+              <div>
+                <ul>
+                  <li class="previous disabled">
+                    <a class="pagerLink">
+                      <i class="fa fa-angle-left"></i>
+                    </a>
+                  </li>
+                  <li class="selected">
+                    <a class="pagerLink">1</a>
+                  </li>
+                  <li>
+                    <a class="pagerLink">2</a>
+                  </li>
+                  <li>
+                    <a class="pagerLink">3</a>
+                  </li>
+                  <li>
+                    <a class="pagerLink">4</a>
+                  </li>
+                  <li>
+                    <a class="pagerLink">5</a>
+                  </li>
+                  <li class="next">
+                    <a class="pagerLink">
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="enc-modal-body step-3" data-step="3">
+          <div class="container-fluid">
+            <ul class="arrow-breadcrumb">
+              <li>
+                <a href="#">Define Content</a>
+              </li>
+              <li>
+                <a href="#">Select Content</a>
+              </li>
+              <li class="active">Select Format </li>
+            </ul>
+            <h3>Select Layout</h3>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group input-group">
+                  <input type="text" class="form-control">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <select multiple class="form-control">
+                <option>Alum Dinner</option>
+                <option>AmberTest - freeEK</option>
+                <option>AmberTest - test auto renewal</option>
+                <option>AmberTest - top level</option>
+                <option>Attending Law Gathering</option>
+                <option>Attending Undergrad Gathering</option>
+                <option>Authenticated</option>
+                <option>Autorenew test - auto1</option>
+              </select>
+            </div>
+            <br>
+            <h3>Select Style</h3>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group input-group">
+                  <input type="text" class="form-control">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <select multiple class="form-control">
+                <option>Alum Dinner</option>
+                <option>AmberTest - freeEK</option>
+                <option>AmberTest - test auto renewal</option>
+                <option>AmberTest - top level</option>
+                <option>Attending Law Gathering</option>
+                <option>Attending Undergrad Gathering</option>
+                <option>Authenticated</option>
+                <option>Autorenew test - auto1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="enc-modal-data-footer">
+          <button type="button" class="enc-btn basic enc-btn-lg-camel" data-dismiss="modal">Close</button>
+          <button type="button" class="enc-btn primary enc-btn-lg-camel step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)"
+            style="margin: 0px 0px 0px 15px">Next</button>
+          <button type="button" class="enc-btn primary enc-btn-lg-camel step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)"
+            style="margin: 0px 0px 0px 15px">Back</button>
+          <button type="button" class="enc-btn primary enc-btn-lg-camel step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)"
+            style="margin: 0px 0px 0px 15px">Next</button>
+          <button type="button" class="enc-btn success enc-btn-lg-camel step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 3)"
+            style="margin: 0px 0px 0px 15px">Place Content</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- Build Scripts. -->
+  <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+  <!-- endbuild -->
+  <script src="../../../scripts/main.js" type="text/javascript"></script>
+
+  <script>
+    sendEvent = function (sel, step) {
+      $(sel).trigger('next.m.' + step);
+    }
+  </script>
+
+</body>
+
+</html>

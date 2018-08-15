@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2018 style guide</title>
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body style="background-color: #ececec">
+    <div class="cms-breadcrumbs">
+        <span>
+            <i class="fa fa-chevron-left" aria-hidden="true" style="margin-right: 15px"></i>Lorum Ipsum</div>
+    </span>
+    <div class="content-wrapper" id="dynamic-container">
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <h1 id="pagetitle">Email Marketing Reporting</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="inner-content-wrapper">
+                    <div class="row no-gutters">
+                        <div class="col-md-12">
+                            <div class="enc-alert enc-alert-info" style="margin: 0px 0px 30px 0px">
+                                Use the filters on the left hand side to change which emails are included in the cross email metrics on the right. Only one
+                                subscription category filter can be applied at a time. If no category filter is applied,
+                                then all categories are included. The default date filter is the last 30 days.</div>
+                        </div>
+                        <div class="col-md-6" style="padding-right: 100px;">
+                            <div class="form-group">
+                                <!--  <h3>Filters</h3> -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3>From</h3>
+                                        <form method="post">
+                                            <div class="form-group input-group">
+                                                <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button submit">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>To</h3>
+                                        <form method="post">
+                                            <div class="form-group input-group">
+                                                <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button submit">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h3>Subscription Category Filter</h3>
+                                        <div class="dropdown">
+                                            <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Subscription Category Filter
+                                                <span class="Select-arrow-zone pull-right">
+                                                    <span class="Select-arrow"></span>
+                                                </span>
+                                            </button>
+                                            <ul class="delux-dropdown-menu btn-block">
+                                                <li>
+                                                    <a href="#">AJ&#39;s training emails</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">General Information</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="help-block">No messages matched your search. Please change your filters.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Cross Email Metrics</h3>
+                            <div class="data-grid-container sm">
+                                <ul class="data-grid-row borderless">
+                                    <li class="data-grid-column left">Campaign Count</li>
+                                    <li class="data-grid-column right">18</li>
+                                    <li class="data-grid-column left">Median Delivery Rate</li>
+                                    <li class="data-grid-column right">100%</li>
+                                </ul>
+                                <ul class="data-grid-row borderless">
+                                    <li class="data-grid-column left">Audience Size</li>
+                                    <li class="data-grid-column right">8</li>
+                                    <li class="data-grid-column left">Median Open Rate</li>
+                                    <li class="data-grid-column right">67%</li>
+                                </ul>
+                                <ul class="data-grid-row borderless">
+                                    <li class="data-grid-column left">Unsubscribes</li>
+                                    <li class="data-grid-column right">2</li>
+                                    <li class="data-grid-column left">Median Click Rate</li>
+                                    <li class="data-grid-column right">0%</li>
+                                </ul>
+                                <ul class="data-grid-row borderless">
+                                    <li class="data-grid-column left">Spam Reports</li>
+                                    <li class="data-grid-column right">2</li>
+                                    <li class="data-grid-column left">Median Conversion Rate</li>
+                                    <li class="data-grid-column right">100%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<!-- Build Scripts. -->
+<script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<script src="../../../scripts/main.js" type="text/javascript"></script>
+<!-- <script src="../../../../scripts/unique_opens_circles.js" type="text/javascript"></script> -->
+<!-- endbuild -->
+
+</body>
+
+</html>

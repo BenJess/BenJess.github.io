@@ -1,487 +1,167 @@
-<!DOCTYPE html>
-
-<html lang="en-us">
+<!doctype html>
+<html lang="">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Benjamin Hike</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Benjamin Hike">
-  <meta name="description" content="Benjamin Hike">
-  <meta name="keywords" content="benjamin hike, kansas city designers, kansas city, mo, mousurri, kcmo, kcmo designers, kcmo UI, kcmo UX, ben, hike, UX, UI, design, human behavior studies">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Playfair+Display" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>2018 style guide</title>
+
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+  <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/external/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/main.css">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114049719-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-114049719-1');
-
-  </script>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 
 </head>
 
 <body>
-  <div class="content-wrapper content-insert">
-    <header class="header is-sticky">
 
-      <div class="logo">
-        <a class="logo__text" href="/" title="BH - home page">BH</a>
-      </div>
-      <nav class="navigation">
-        <button class="nav__toggle" type="button" title="Toggle menu navigation">
-          <span class="icon hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+  <div id="wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="#services" class="nav-list__link">Who</a>
+        <a class="navbar-brand" href="index.html">iModules UX Style Guide</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+          <li class="active">
+            <a href="index.html">
+              <i class="fa fa-fw fa-dashboard" aria-hidden="true"></i> Reference Modules</a>
           </li>
-          <li class="nav-list__item">
-            <a href="#about" class="nav-list__link">What</a>
+          <li>
+            <a href="buttons.html">
+              <i class="fa fa-fw fa-square" aria-hidden="true"></i> Buttons</a>
           </li>
-          <li class="nav-list__item">
-            <a href="#works" class="nav-list__link">When</a>
+          <li>
+            <a href="tables.html">
+              <i class="fa fa-fw fa-table" aria-hidden="true"></i> Tables</a>
           </li>
-          <li class="nav-list__item">
-            <a href="#contact" class="nav-list__link">Where</a>
+          <li>
+            <a href="forms.html">
+              <i class="fa fa-fw fa-edit" aria-hidden="true"></i> Forms</a>
           </li>
-          <li class="nav-list__item">
-            <a href="#testimonials" class="nav-list__link">Why</a>
+          <li>
+            <a href="copy.html">
+              <i class="fa fa-fw fa-text-width" aria-hidden="true"></i> Copy</a>
+          </li>
+          <li>
+            <a href="navigation.html">
+              <i class="fa fa-fw fa-bars" aria-hidden="true"></i> Navigation</a>
+          </li>
+          <li>
+            <a href="modals.html">
+              <i class="fa fa-fw fa-times-circle" aria-hidden="true" style="color: #9d9d9d"></i> Modals</a>
+          </li>
+          <li>
+            <a href="tabs.html">
+              <i class="fa fa-fw fa-folder" aria-hidden="true"></i> Tabs</a>
+          </li>
+          <li>
+            <a href="grid.html">
+              <i class="fa fa-fw fa-th" aria-hidden="true"></i> Grid</a>
           </li>
         </ul>
-      </nav>
-
-    </header>
-    <main class="content">
-      <section class="section">
-        <div class="hero hero-image">
-          <div class="hero-content">
-            <span class="hero-subtitle">I'm Benjamin Hike</span>
-            <h1 class="hero-title">I craft
-              <br>Decisions</h1>
-          </div>
-          <div class="image-holder demo-left">
-            <img src="img/hero-image.jpg" alt="Unforgettable impression" class="img-hero">
-          </div>
-        </div>
-      </section>
-      <section id="services" class="section section-services bg-neutral">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div class="service bg-inverse">
-                <div class="content service-content">
-                  <h3 class="caption">
-                    Who am I?
-                  </h3>
-                  <h2 class="headline">
-                    A focused Director and Dedicated Innovator.
-                  </h2>
-                  <p>
-                    I lead teams in Brand Analysis, Storyboarding, User Flows, Wireframes, Deployment ready executions, and User feedback studies.
-                    I have directed work for Nike, Disney, Celebrity Cruise Lines, Intel, Mazda, Build A Bear and more.
-                  </p>
-                </div>
-                <div class="image-holder">
-                  <img src="img/services.jpg" alt="Services">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="about" class="section section-about">
-        <div class="container">
-          <div class="row">
-            <div class="about">
-              <div class="col-md-5 col-sm-12">
-                <h3 class="caption">
-                  What brought me here?
-                </h3>
-                <h2 class="headline">
-                  User Experience is Everything.
-                </h2>
-                <p>
-                  100% of the world around us can be designed to solicit an emotional response. You don't have to follow the rules, but it's
-                  in your best interests. I research the audience, I anaylize the marketplace, and I create those interests.
-                </p>
-              </div>
-              <div class="col-md-6 col-md-offset-1 col-sm-12">
-                <div class="about__image-container">
-                  <div class="image-holder">
-                    <img src="img/about-01.jpg" alt="About Me">
-                  </div>
-                  <div class="image-holder">
-                    <img src="img/about-02.jpg" alt="About Me">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="works" class="section section-projects">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div class="projects">
-                <div class="project">
-                  <div class="content project-content">
-                    <h3 class="caption">
-                      When did I get my start?
-                    </h3>
-                    <h2 class="headline">
-                      I've got twelve years experience
-                    </h2>
-                    <h3>
-                      <p>
-                        <span style="color: darkred">I know what you did last summer,</span>
-                      </p>
-                    </h3>
-                    <h5>
-                      <p>
-                        and how to make you do it again.
-                      </p>
-                      <br>
-                    </h5>
-                    <p>I have deployed a wide array of high-profile UX solutions using agile methodologies, and extreme programming
-                      practices. They have yeilded superior results, dramatic increases in customer retention, and continued
-                      growth over time.
-                    </p>
-                    </p>
-                  </div>
-                  <div class="image-holder">
-                    <img src="img/projects/project-01.jpg" alt="Project 01">
-                  </div>
-                </div>
-                <div class="project project--opposite">
-                  <div class="content project-content">
-                    <h3 class="caption">
-                      When do I shine?
-                    </h3>
-                    <h2 class="headline">
-                      When I Lead
-                    </h2>
-                    <h3>
-                      <p>
-                        <span style="color: darkred">The team</span>
-                      </p>
-                    </h3>
-                    <h5>
-                      <p>
-                        is everything.
-                      </p>
-                    </h5>
-                    <br>
-                    <p>I've worked with varied timelines geared toward internal and external stakeholders across a diverse range
-                      of large and small teams.
-                    </p>
-                  </div>
-                  <div class="image-holder">
-                    <img src="img/projects/project-02.jpg" alt="Project 02">
-                  </div>
-                </div>
-                <div class="project">
-                  <div class="content project-content">
-                    <h3 class="caption">
-                      When do I switch on?
-                    </h3>
-                    <h2 class="headline">
-                      I'm always thinking
-                    </h2>
-                    <h3>
-                      <p>
-                        <span style="color: darkred">ABC</span>
-                      </p>
-                    </h3>
-                    <h5>
-                      <p>
-                        stands for 'Always Be Creating'.
-                      </p>
-                      <br>
-                    </h5>
-                    <p>I've simplified the roadmaps, streamlined client expectations, and provided exceptional value with proactive
-                      decicions. My experience in this field has cultivated the results driven resource you see today.</p>
-                    </p>
-                  </div>
-                  <div class="image-holder">
-                    <img src="img/projects/project-03.jpg" alt="Project 03">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="section section-contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div class="contact text-center">
-                <h3 class="caption caption--center">
-                  Where to contact me
-                </h3>
-                <h2 class="headline">
-                  Drop me a line
-                </h2>
-                <form id="contact-form" class="form" action="mail/mail.php" method="POST" role="form">
-                  <div class="form-group">
-                    <label class="form__label" for="name">Name*</label>
-                    <input class="form__field" id="name" name="name" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label class="form__label" for="email">Email Address*</label>
-                    <input class="form__field" id="email" name="email" type="email">
-                  </div>
-                  <div class="form-group">
-                    <label class="form__label" for="subject">Subject*</label>
-                    <input class="form__field" id="subject" name="subject" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label class="form__label" for="body">Message*</label>
-                    <textarea class="form__field" id="body" name="message" type="text" rows="5"></textarea>
-                  </div>
-                  <div class="form-group form-group--btn text-center">
-                    <button class="btn btn-primary btn-fill btn-hover-01">
-                      <span>Submit</span>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section-testimonials bg-neutral">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
-              <h3 class="caption caption--center">
-                Why? It's what I do best
-              </h3>
-              <div id="testimonials" class="testimonials owl-carousel owl-carousel--full">
-                <div class="testimonial">
-                  <h4 style="margin-top: 30px">
-                    People
-                  </h4>
-                  <h2 class="headline">
-                    Jeremy Jewell
-                  </h2>
-                  <h3>
-                    <p>
-                      <span style="color: darkred">Engineering Program Manager at Apple</span>
-                    </p>
-                  </h3>
-                  <p>
-                    Ben is one of the best creative thinkers and producers high quality design in the digital industry. I have worked with Ben
-                    on a number of projects including print, web, mobile, photography and other digital platforms. Each is
-                    executed with an unmatched degree of precision and quality.
-                  </p>
-                </div>
-                <div class="testimonial">
-                  <h4 style="margin-top: 30px">
-                    People
-                  </h4>
-                  <h2 class="headline">
-                    Bert Wang
-                  </h2>
-                  <h3>
-                    <p>
-                      <span style="color: darkred">Senior Software Engineer at DFCN (NetLevel)</span>
-                    </p>
-                  </h3>
-                  <p>
-                    Ben and I worked closely together at DFCN, where he was the Chief Designer and I'm with the Development team. Ben is very
-                    experienced in UX design and the look and feel he designed for the platform website is exceptional. He
-                    is talented and hard-working and was always supportive of our colleagues. A great person to work with!
-                  </p>
-                </div>
-                <div class="testimonial">
-                  <h4 style="margin-top: 30px">
-                    People
-                  </h4>
-                  <h2 class="headline">
-                    Mike Ackerman
-                  </h2>
-                  <h3>
-                    <p>
-                      <span style="color: darkred">Senior Web Developer at Viget Labs</span>
-                    </p>
-                  </h3>
-                  <p>
-                    Ben's work is breath-taking. I've never seen a designer that is able to understand the concept of "brand" like Ben. His designs
-                    not only look good, but are very functional and smart. He also has a great concept of what sounds good,
-                    looks good, and works for the customer.
-                  </p>
-                </div>
-
-                <!-- Press -->
-
-                <div class="testimonial">
-                  <h3 style="margin-top: 30px">
-                    Press
-                  </h3>
-                  <h2 class="headline">
-                    AFM: Digital Film Cloud Network Aims to Simplify Global Pic Rights
-                  </h2>
-                  <h3>
-                    <p>
-                      <span style="color: darkred">Variety</span>
-                    </p>
-                  </h3>
-                  <p>
-                    Digital Film Cloud Network is launching an online marketplace aimed at simplifying the trading of global film rights and
-                    replacing the current paperwork-heavy method of doing so.
-                    <a href="http://variety.com/2014/film/news/digital-film-cloud-network-rights-1201348091/" target="_blank">
-                      <span style="color: darkred">Full article ></span>
-                    </a>
-                  </p>
-                </div>
-                <div class="testimonial">
-                  <h3 style="margin-top: 30px">
-                    Press
-                  </h3>
-                  <h2 class="headline">
-                    AFM: Digital Rights Trading System Looks to Disrupt the Way Movie Sales Are Made
-                  </h2>
-                  <h3>
-                    <p>
-                      <span style="color: darkred">Hollywood Reporter</span>
-                    </p>
-                  </h3>
-                  <p>
-                    What better place to launch a new venture than in the middle of a business you plan to at least disrupt and possibly displace.
-                    <a href="https://www.hollywoodreporter.com/news/afm-digital-rights-trading-system-746504" target="_blank">
-                      <span style="color: darkred">Full article ></span>
-                    </a>
-                  </p>
-                </div>
-                <div class="testimonial">
-                  <h3 style="margin-top: 30px">
-                    Press
-                  </h3>
-                  <h2 class="headline">
-                    Digital Film Cloud Network Launches Online Marketplace for Global Film Rights
-                  </h2>
-                  <h3>
-                    <p>
-                      <span style="color: darkred">The Wrap</span>
-                    </p>
-                  </h3>
-                  <p>
-                    Digital Film Cloud Network launched its cloud-based online marketplace at the American Film Market on Wednesday to facilitate
-                    global film rights trading between buyers and sellers.
-                    <a href="https://www.thewrap.com/digital-film-cloud-network-launches-online-marketplace-for-global-film-rights/" target="_blank">
-                      <span style="color: darkred">Full article ></span>
-                    </a>
-                  </p>
-                </div>
-
-                <!-- Press -->
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-
-
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <ul class="social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="https://www.youtube.com/playlist?list=PLHQmZX1uD922RS8e08-2I4H4pSxfb-i_y" target="_blank">
-                  <i class="fa fa-youtube" aria-hidden="true" style="margin-right: 10px"></i>
-                  YouTube
-                </a>
-              </li>
-
-              <li class="social-list__item">
-                <a class="social-list__link" href="https://benjaminhike.myportfolio.com/" target="_blank">
-                  <i class="fa fa-behance" aria-hidden="true" style="margin-right: 10px"></i>
-                  Portfolio
-                </a>
-              </li>
-
-              <li class="social-list__item">
-                <a class="social-list__link" href="https://www.instagram.com/benjamin_hike/" target="_blank">
-                  <i class="fa fa-instagram" aria-hidden="true" style="margin-right: 10px"></i>
-                  Instagram
-                </a>
-              </li>
-
-              <li class="social-list__item">
-                <a class="social-list__link" href="https://twitter.com/BenjaminHike" target="_blank">
-                  <i class="fa fa-twitter" aria-hidden="true" style="margin-right: 10px"></i>
-                  Twitter
-                </a>
-              </li>
-
-              <li class="social-list__item">
-                <a class="social-list__link" href="https://indd.adobe.com/view/f3451376-40e2-4006-8ab6-a3a7288a0545" target="_blank">
-                  <!-- https://indd.adobe.com/view/f3451376-40e2-4006-8ab6-a3a7288a0545 -->
-                  <i class="fa fa-file-text" aria-hidden="true" style="margin-right: 10px"></i>
-                  Resume
-                </a>
-              </li>
-
-            </ul>
-          </div>
-          <!-- end .col-md-6 -->
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="logo footer-logo">
-              <a class="logo__text" href="/" title="The Creative - home page">Benjamin Hike</a>
-              <p class="copyright">
-                &copy; 2018 All rights reserved.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
-    </footer>
-  </div>
-  <div class="overlay is-hidden">
-    <div class="loader"></div>
-    <div class="long-loading-container is-hidden">
-      <p>The page is loading more then 5 sec.
-        <br>You can wait, return back or directly load a page </p>
-      <a class="btn btn-primary js-overlay-hide" href="" data-disabled="true">Back</a>
-      <a class="btn btn-primary js-direct" href="" data-disabled="true">Direct</a>
+    </nav>
+    <div id="page-wrapper">
+      <div class="container-fluid header">
+        <h1>Reference Modules</h1>
+        <h2>Guiding Principles</h2>
+        <hr>
+        <div class="col-md-6">Below are dynamic examples of seperate Encompass Modules. Some are deployed, some serve only as a point of reference.</div>
+      </div>
+      <div class="container-fluid">
+        <h3> Email</h3>
+        <ul style="list-style: none; margin-left: -40px">
+          <li>
+            <h4>
+              <a href="mockups/email/email_home/index.html" target="_blank">Email Home</a>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <a href="mockups/email/submgmt/index.html" target="_blank">Email Subscription Management</a>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <a href="mockups/email/color_picker_clear/index.html" target="_blank">Email Color Picker</a>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <a href="mockups/email/hex_colors/index.html" target="_blank">Email HEX Colors</a>
+            </h4>
+          </li>
+          <!-- <li>
+            <h4>
+              <a href="mockups/email/html_editor/index.html" target="_blank">Email HTML editor</a>
+            </h4>
+          </li> -->
+          <li>
+            <h4>
+              <a href="mockups/email/send_flow_modal/index.html" target="_blank">Email Send Modal Flow</a>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <a href="mockups/email/unique_opens/index.html" target="_blank">Email Unique Opens</a>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <a href="mockups/email/templateSelect/index.html" target="_blank">Email Template Select</a>
+            </h4>
+          </li>
+        </ul>
+        <h3> Giving</h3>
+        <ul style="list-style: none; margin-left: -40px">
+          <li>
+            <h4>
+              <a href="mockups/giving/g_reports/index.html" target="_blank">Giving Reports</a>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <a href="mockups/giving/g_transaction_reports/index.html" target="_blank">Giving Transaction Reports</a>
+            </h4>
+          </li>
+        </ul>
+        <h3> Events</h3>
+        <ul style="list-style: none; margin-left: -40px">
+          <li>
+            <h4>
+              <a href="mockups/events/e_reports/index.html" target="_blank">Event Reports</a>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <a href="mockups/events/e_transaction_reports/index.html" target="_blank">Event Transaction Reports</a>
+            </h4>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="scripts/external/jquery-3.1.1.min.js"></script>
-  <script src="scripts/external/owl.carousel.min.js"></script>
-  <script src="scripts/external/contact-form.js"></script>
+    <!-- Build Scripts. -->
+    <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <!-- endbuild -->
 
-  <script type="text/javascript">
-    new ContactForm('#contact-form', {});
-
-  </script>
-  <script src="scripts/main.js"></script>
 </body>
 
 </html>

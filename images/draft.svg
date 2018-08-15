@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="235px" height="73px" viewBox="0 0 235 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>draft</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="235" height="51"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.0" transform="translate(0.000000, -266.000000)">
+            <g id="draft" transform="translate(0.000000, 266.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill-opacity="0.5" fill="#FBB30B" xlink:href="#path-1"></use>
+                <polygon id="shadow" fill="#735100" opacity="0.645493659" mask="url(#mask-2)" points="73.671875 24.734375 100 51 73.671875 51"></polygon>
+                <circle id="Oval" fill="#FBB30B" cx="45.5" cy="40.5" r="32.5"></circle>
+                <path d="M31,18 L31,60 L63,60 L63,33.7752809 L46.9979856,18 L31,18 Z M34.0919215,20.7392291 L43.7647403,20.7392291 L43.7647403,35.8593907 L59.9121072,35.8593907 L59.9121072,57.0340142 L34.0919215,57.0340142 L34.0919215,20.7392291 Z M46.9979856,23.2742895 L57.6700239,33.7514871 L46.9979856,33.7514871 L46.9979856,23.2742895 Z M39.0010072,41.6272307 L54.9989928,41.6272307 L54.9989928,39.0019828 L39.0010072,39.0019828 L39.0010072,41.6272307 Z M39.0010072,46.8777264 L54.9989928,46.8777264 L54.9989928,44.2524785 L39.0010072,44.2524785 L39.0010072,46.8777264 Z M39.0010072,52.1242564 L54.9989928,52.1242564 L54.9989928,49.5029742 L39.0010072,49.5029742 L39.0010072,52.1242564 Z" id="Page-1" fill="#FEFEFE"></path>
+            </g>
+        </g>
+    </g>
+</svg>

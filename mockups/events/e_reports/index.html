@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2018 style guide</title>
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="css/giving-enc-admin.css" rel="stylesheet">
+    <link href="css/reports-enc-admin.css" rel="stylesheet">
+    <link href="css/reports-modal-sizing.css" rel="stylesheet">
+    <!-- endbuild -->
+
+</head>
+
+<body style="background-color: #ececec">
+    <div class="row" style="margin: 0px 0px 40px 0px">
+        <ul class="nav nav-steps centered-pills setup-panel">
+            <li class="active arrow_box">
+                <a href="#step-1">
+                    <h4>Options</h4>
+                </a>
+            </li>
+            <li class="disabled">
+                <a href="#step-2">
+                    <h4>Member Fields</h4>
+                </a>
+            </li>
+            <li class="disabled">
+                <a href="#step-3">
+                    <h4>Preview</h4>
+                </a>
+            </li>
+            <li class="disabled">
+                <a href="#step-4">
+                    <h4>Retrieve File</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="content-wrapper-sm" class="contain-wrapper">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <h4 class="h4-top-margin">Events / Viewing: Benjamin J Hike <i class="fa fa-question-circle" aria-hidden="true" style="opacity: .5"></i></h4>
+                <p><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Find Member Record</a></p>
+            </div>
+            <div class="col-md-12">
+                <h1 id="pagetitle">Options</h1>
+            </div>
+            <!--SETTINGS STEP-1 BEGIN-->
+            <div class="setup-content" id="step-1">
+                <div class="col-md-12">
+                    <div id="inner-content-wrapper-sm">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <h3>Select Date Range</h3>
+                                <div class="row">
+                                    <!-- Daily to Last Day of Quarter Both Dates  -->
+                                    <div id="daily_to_lastquarter_bothdates1">
+                                        <!-- Daily to Last Day of Quarter Both Dates -->
+                                        <div class="col-md-6">
+                                            <h3>From<span style="color: red; font-size: 18px;"> * required</span></h3>
+                                            <form method="post">
+                                                <div class="form-group input-group">
+                                                    <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                                                    <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button submit"><i class="fa fa-calendar"></i></button>
+                                        </span> </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>To<span style="color: red; font-size: 18px;"> * required</span></h3>
+                                            <form method="post">
+                                                <div class="form-group input-group">
+                                                    <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                                                    <span class="input-group-btn">
+                                                <button class="btn btn-primary" type="button submit"><i class="fa fa-calendar"></i></button>
+                                            </span> </div>
+                                            </form>
+                                        </div>
+                                        <!-- Daily to Last Day of Quarter Both Dates END -->
+                                    </div>
+                                    <!-- Daily to Last Day of Quarter Both Dates END -->
+                                </div>
+                                <div id="radio_btns_step1">
+                                    <!-- Radio BTNS -->
+                                    <div class="form-group">
+                                        <div class="radio" id="radio01">
+                                            <input type="radio" name="radio" id="checked0">
+                                            <label for="checked0"><span></span>Main community  (This includes regular sub-communities)</label>
+                                        </div>
+                                        <!-- Exclude Certain Communities -->
+                                        <div class="radio" id="radio02">
+                                            <input type="radio" name="radio" id="checked1">
+                                            <label for="checked1"><span></span>Main community and all sealed sub-communities</label>
+                                        </div>
+                                        <!-- Exclude Certain Communities -->
+                                        <!-- Exclude Certain Communities BEGIN -->
+                                        <!-- Checkbox Initial -->
+                                        <div class="row_content checkbox" id="checkbox1"> <span>
+                        <input type="checkbox" id="checked10">
+                        <label for="checked10">Exclude certain communities.</label>
+                    </span>
+                                        </div>
+                                        <div class="row_content" id="exclude_certain">
+                                            <h3>Exclude the following communities.</h3>
+                                            <div class="multiSelect" style="margin-bottom: 15px">
+                                                <select multiple class="form-control">
+                                                        <option>Alum Dinner</option>
+                                                        <option>AmberTest - freeEK</option>
+                                                        <option>AmberTest - test auto renewal</option>
+                                                        <option>AmberTest - top level</option>
+                                                        <option>Attending Law Gathering</option>
+                                                        <option>Attending Undergrad Gathering</option>
+                                                        <option>Authenticated</option>
+                                                        <option>Autorenew test - auto1</option>
+                                                        </select>
+                                                <div class="select-buttons">
+                                                    <button class="enc-btn select-right"></button>
+                                                    <button class="enc-btn select-left"></button>
+                                                </div>
+                                                <select multiple class="form-control">
+                                                        <!--<option>Alum Dinner</option>
+                                                        <option>AmberTest - freeEK</option>
+                                                        <option>AmberTest - test auto renewal</option>
+                                                        <option>AmberTest - top level</option>
+                                                        <option>Attending Law Gathering</option>
+                                                        <option>Attending Undergrad Gathering</option>
+                                                        <option>Authenticated</option>
+                                                        <option>Autorenew test - auto1</option>-->
+                                                        </select>
+                                                <span>
+                                                <div class="field-sort-btns">
+                                                    <button class="enc-sort-btn btn-link sort-top glyphicon glyphicon-triangle-top"></button>
+                                                    <button class="enc-sort-btn btn-link sort-up glyphicon glyphicon-chevron-up"></button>
+                                                    <button class="enc-sort-btn btn-link sort-down glyphicon glyphicon-chevron-down"></button>
+                                                    <button class="enc-sort-btn btn-link sort-bottom glyphicon glyphicon-triangle-bottom"></button>
+                                                </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Exclude Certain Communities END -->
+                                    <div class="radio" id="radio03">
+                                        <input type="radio" name="radio" id="checked3">
+                                        <label for="checked3"><span></span>Main community and selected sealed sub-communities</label>
+                                    </div>
+                                    <div class="row_content" id="exclude_certain2">
+                                        <div class="multiSelect" style="margin-bottom: 15px">
+                                            <select multiple class="form-control">
+                                                        <option>Alum Dinner</option>
+                                                        <option>AmberTest - freeEK</option>
+                                                        <option>AmberTest - test auto renewal</option>
+                                                        <option>AmberTest - top level</option>
+                                                        <option>Attending Law Gathering</option>
+                                                        <option>Attending Undergrad Gathering</option>
+                                                        <option>Authenticated</option>
+                                                        <option>Autorenew test - auto1</option>
+                                                        </select>
+                                            <div class="select-buttons">
+                                                <button class="enc-btn select-right"></button>
+                                                <button class="enc-btn select-left"></button>
+                                            </div>
+                                            <select multiple class="form-control">
+                                                        <!--<option>Alum Dinner</option>
+                                                        <option>AmberTest - freeEK</option>
+                                                        <option>AmberTest - test auto renewal</option>
+                                                        <option>AmberTest - top level</option>
+                                                        <option>Attending Law Gathering</option>
+                                                        <option>Attending Undergrad Gathering</option>
+                                                        <option>Authenticated</option>
+                                                        <option>Autorenew test - auto1</option>-->
+                                                        </select>
+                                            <span>
+                                                <div class="field-sort-btns">
+                                                    <button class="enc-sort-btn btn-link sort-top glyphicon glyphicon-triangle-top"></button>
+                                                    <button class="enc-sort-btn btn-link sort-up glyphicon glyphicon-chevron-up"></button>
+                                                    <button class="enc-sort-btn btn-link sort-down glyphicon glyphicon-chevron-down"></button>
+                                                    <button class="enc-sort-btn btn-link sort-bottom glyphicon glyphicon-triangle-bottom"></button>
+                                            </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Radio BTNS END -->
+
+                                <ul class="btns">
+                                    <li class="btns">
+                                        <button type="button" id="cancel1" class="enc-btn basic enc-btn-lg-camel">Cancel</button>
+                                    </li>
+                                    <li class="btns">
+                                        <button type="button" id="activate-step-2" class="enc-btn primary enc-btn-lg-camel">Next</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SETTINGS STEP-1 END-->
+        <!--SETTINGS STEP-2 BEGIN-->
+        <div class="setup-content" id="step-2">
+            <div class="col-md-12">
+                <div id="inner-content-wrapper-sm-lvl2">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="enc-alert enc-alert-info">
+                                <!--<button type="button" class="close" data-dismiss="alert">&#9587;</button>-->
+                                Based on the criteria you selected, your report will contain 1 member rows.</div>
+                            <h3>Load a Saved Export Field List</h3>
+                            <div class="dropdown">
+                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left"><span id="list_choice"></span><span class="Select-arrow-zone pull-right"><span class="Select-arrow"></span></span></button>
+                                <p class="help-block">When should this export be run?</p>
+                                <ul id="dropdown_items" class="delux-dropdown-menu btn-block">
+                                </ul>
+                            </div>
+                            <h3>Sel Profile Fields</h3>
+                            <div class="row_content2" id="instance_fields2">
+                                <!-- Instance Fields -->
+                                <h3>Available Fields</h3>
+                                <div class="multiSelect" style="margin-bottom: 15px">
+                                    <select multiple class="form-control">
+                                                        <option>Alum Dinner</option>
+                                                        <option>AmberTest - freeEK</option>
+                                                        <option>AmberTest - test auto renewal</option>
+                                                        <option>AmberTest - top level</option>
+                                                        <option>Attending Law Gathering</option>
+                                                        <option>Attending Undergrad Gathering</option>
+                                                        <option>Authenticated</option>
+                                                        <option>Autorenew test - auto1</option>
+                                                        </select>
+                                    <div class="select-buttons">
+                                        <button class="enc-btn select-right"></button>
+                                        <button class="enc-btn select-left"></button>
+                                    </div>
+                                    <select multiple class="form-control">
+                                                        <option>Alum Dinner</option>
+                                                        <option>AmberTest - freeEK</option>
+                                                        <option>AmberTest - test auto renewal</option>
+                                                        <option>AmberTest - top level</option>
+                                                        <option>Attending Law Gathering</option>
+                                                        <option>Attending Undergrad Gathering</option>
+                                                        <option>Authenticated</option>
+                                                        <option>Autorenew test - auto1</option>
+                                                        </select>
+                                    <span>
+                                                <div class="field-sort-btns">
+                                                    <button class="enc-sort-btn btn-link sort-top glyphicon glyphicon-triangle-top"></button>
+                                                    <button class="enc-sort-btn btn-link sort-up glyphicon glyphicon-chevron-up"></button>
+                                                    <button class="enc-sort-btn btn-link sort-down glyphicon glyphicon-chevron-down"></button>
+                                                    <button class="enc-sort-btn btn-link sort-bottom glyphicon glyphicon-triangle-bottom"></button>
+                                        </div>
+                                        </span>
+                                </div>
+                            </div>
+                            <!-- Instance Fields END -->
+                            <ul class="btns">
+                                <li class="btns">
+                                    <button type="button" id="cancel2" class="enc-btn basic enc-btn-lg-camel">Cancel</button>
+                                </li>
+                                <li class="btns">
+                                    <button type="button" id="backto-step-1" class="enc-btn basic enc-btn-lg-camel">Back</button>
+                                </li>
+                                <li class="btns">
+                                    <button type="button" id="activate-step-3" class="enc-btn primary enc-btn-lg-camel">Preview</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SETTINGS STEP-2 END-->
+        <!--SETTINGS STEP-3 BEGIN-->
+        <div class="setup-content" id="step-3">
+            <div class="col-md-12">
+                <div id="inner-content-wrapper">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="data-grid-container">
+                                <ul class="data-grid-row">
+                                    <li class="data-grid-column">IDNum</li>
+                                    <li class="data-grid-column">IDNum2</li>
+                                    <li class="data-grid-column">IDNum3</li>
+                                    <li class="data-grid-column">Community Name</li>
+                                    <li class="data-grid-column">Last Name</li>
+                                    <li class="data-grid-column">First Name</li>
+                                    <li class="data-grid-column">CnBio_ID</li>
+                                    <li class="data-grid-column">with yo mama - EK TEST</li>
+                                    <li class="data-grid-column">event_attended_form_driven</li>
+                                    <li class="data-grid-column">ek11152013 - guestEK1152013</li>
+                                    <li class="data-grid-column">Instanced Event</li>
+                                    <li class="data-grid-column">testEK07102014 - test instance</li>
+                                    <li class="data-grid-column">Event</li>
+                                </ul>
+                                <ul class="data-grid-row">
+                                    <li class="data-grid-column">7_2_2012 roll event rec</li>
+                                    <li class="data-grid-column">Lorum Ipsum</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">On Demand</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                </ul>
+                                <ul class="data-grid-row">
+                                    <li class="data-grid-column">j21112-2</li>
+                                    <li class="data-grid-column">Lorum Ipsum</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">On Demand</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                </ul>
+                                <ul class="data-grid-row">
+                                    <li class="data-grid-column">jw1112-1</li>
+                                    <li class="data-grid-column">Lorum Ipsum</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">On Demand</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                </ul>
+                                <ul class="data-grid-row">
+                                    <li class="data-grid-column">one time</li>
+                                    <li class="data-grid-column">Lorum Ipsum</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">On Demand</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                </ul>
+                                <ul class="data-grid-row">
+                                    <li class="data-grid-column">sched ex 370</li>
+                                    <li class="data-grid-column">Lorum Ipsum</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">On Demand</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                </ul>
+                                <ul class="data-grid-row">
+                                    <li class="data-grid-column">Test Saved</li>
+                                    <li class="data-grid-column">Lorum Ipsum</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">On Demand</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                </ul>
+                                <ul class="data-grid-row">
+                                    <li class="data-grid-column">test!</li>
+                                    <li class="data-grid-column">Lorum Ipsum</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">On Demand</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">All Avail</li>
+                                    <li class="data-grid-column">02-02-1980 10:05am</li>
+                                    <li class="data-grid-column">Cosmo Janice</li>
+                                </ul>
+                            </div>
+                            <ul class="btns">
+                                <li class="btns">
+                                    <button type="button" id="cancel3" class="enc-btn basic enc-btn-lg-camel">Cancel</button>
+                                </li>
+                                <li class="btns">
+                                    <button type="button" id="backto-step-2" class="enc-btn basic enc-btn-lg-camel">Back</button>
+                                </li>
+                                <li class="btns">
+                                    <button type="button" id="activate-step-4" class="enc-btn primary enc-btn-lg-camel">Next</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SETTINGS STEP-3 END-->
+        <!--SETTINGS STEP-4 BEGIN-->
+        <div class="setup-content" id="step-4">
+            <div class="col-md-12">
+                <div id="inner-content-wrapper-sm-lvl2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--ON demand BTN fields-->
+                            <div class="row_content4" id="ondemand_button_fields">
+                                <!--ON demand BTN fields-->
+                                <!-- <div class="enc-alert enc-alert-success row_content4a" id="successAlert">
+                                    Your export has been downloaded. Please access the file in your browser’s download history.</div> -->
+                                <!-- <div class="enc-alert enc-alert-warning row_content4a" id="warningAlert">
+                                    You do not currently have any data to export.</div> -->
+                                <div class="enc-alert enc-alert-info">
+                                    Based on the criteria you selected, your report will contain 1 member rows.</div>
+                                <div id="radio_btns_step1">
+                                    <!-- Radio BTNS -->
+                                    <div class="form-group">
+                                        <div class="radio">
+                                            <input type="radio" id="radio07" name="radio" />
+                                            <label for="radio07"><span></span>I do not want to Save this Export.</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="radio08" name="radio" />
+                                            <label for="radio08"><span></span>Save this Export for future use.</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="radio09" name="radio" />
+                                            <label for="radio09"><span></span>Save and Schedule this Export.</label>
+                                        </div>
+                                    </div>
+                                    <!-- Radio BTNS END -->
+                                </div>
+                                <!--<h3 class="row_content4" id="hideTxtBlock">Please use the button below to generate and download your export.</h3>-->
+                                <ul class="btns">
+                                    <li class="btns">
+                                        <button type="button" id="cancel4" class="enc-btn basic enc-btn-lg-camel">Cancel</button>
+                                    </li>
+                                    <li class="btns">
+                                        <button type="button" id="cancel5" class="enc-btn success enc-btn-lg-camel">Download File</button>
+                                    </li>
+                                    <li class="btns">
+                                        <!--<button type="button" id="activate-step-1" class="enc-btn success enc-btn-lg-camel row_content4a">Download Export File</button>-->
+                                    </li>
+                                </ul>
+                                <!--ON demand BTN fields END-->
+                            </div>
+                            <!--ON demand BTN fields END-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SETTINGS STEP-4 END-->
+    </div>
+
+    <!-- Build Scripts. -->
+    <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="../../../scripts/main.js" type="text/javascript"></script>
+    <script src="scripts/event_r_report.js" type="text/javascript"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>

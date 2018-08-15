@@ -1,0 +1,78 @@
+#draft {
+    border-bottom: 1px solid #FBB30B;
+}
+
+#released {
+    border-bottom: 1px solid #397AF2;
+}
+
+#sent {
+    border-bottom: 1px solid #2E9E49;
+}
+
+.draft-state {
+    margin: 10px 0px -5px 0px;
+    color: #FBB30B;
+}
+
+.released-state {
+    margin: 10px 0px -5px 0px;
+    color: #397AF2;
+}
+
+.sent-state {
+    margin: 10px 0px -5px 0px;
+    color: #2E9E49;
+}
+
+.email-tile {
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); */
+    /* border-radius: 3.2px; */
+    transition: 0.2s;
+    margin: 15px 15px 0 0;
+    padding: 10px 10px 20px 10px;
+    width: 295px;
+    transition: all .2s ease-in-out;
+    color: #919191;
+    background-color: #f0f0f0;
+}
+
+.email-tile .container-fluid p {
+    margin: 0;
+}
+
+.email-tile .container-fluid hr {
+    /* margin-top: 8px; */
+    margin-bottom: 8px;
+    /* height: 1px; */
+    border-top: 0px dotted #c4c4c4;
+    border-bottom: 4px dotted #c4c4c4;
+}
+
+.email-tile:hover,
+#draft:hover,
+#released:hover,
+#sent:hover {
+    box-shadow: 0 4px 8px 0 rgba(78, 78, 78, 0.2);
+    border-bottom: 0px solid rgb(189, 189, 189);
+    background-color: #fff;
+    transform: scale(1.015);
+}
+
+.email-svg {
+    /* border-top-left-radius: 3.2px;
+    border-top-right-radius: 3.2px; */
+    width: 100%;
+}
+
+.email-tile .fa {
+    color: rgb(66, 66, 66);
+    margin: 15px 10px 0 -1px;
+}
+
+/* .email-tile-header {
+    position: absolute;
+    margin: 85px 0 0 15px;
+    color: #fff;
+    text-transform: uppercase;
+} */

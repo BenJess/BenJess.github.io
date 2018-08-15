@@ -1,0 +1,56 @@
+.multiSelect {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Added FEB 2018 */
+
+.select-gutter {
+    width: 40px;
+    padding: 0 5px;
+    margin: 0 1em;
+    height: 150px;
+    display: flex;
+    top: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Added FEB 2018 */
+
+  /* .select-buttons {
+    width: 40px;
+    padding: 0 5px;
+    margin: 0 1em;
+    height: 150px;
+    display: flex;
+    top: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+
+.select-buttons button {
+    line-height: 1;
+    margin-left: 0;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    background-color: #4a90e2;
+    border-radius: 15px;
+}
+
+.select-right:before {
+    font-family: FontAwesome;
+    color: #fff;
+    font-weight: 700;
+    content: "\F054";
+    margin-right: 6px;
+}
+
+.select-left:before {
+    font-family: FontAwesome;
+    color: #fff;
+    font-weight: 700;
+    content: "\F053";
+    margin-left: -3px;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2018 style guide</title>
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">iModules UX Style Guide</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-fw fa-dashboard" aria-hidden="true"></i> Reference Modules</a>
+                    </li>
+                    <li class="active">
+                        <a href="buttons.html">
+                            <i class="fa fa-fw fa-square" aria-hidden="true"></i> Buttons</a>
+                    </li>
+                    <li>
+                        <a href="tables.html">
+                            <i class="fa fa-fw fa-table" aria-hidden="true"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="forms.html">
+                            <i class="fa fa-fw fa-edit" aria-hidden="true"></i> Forms</a>
+                    </li>
+                    <li>
+                        <a href="copy.html">
+                            <i class="fa fa-fw fa-text-width" aria-hidden="true"></i> Copy</a>
+                    </li>
+                    <li>
+                        <a href="navigation.html">
+                            <i class="fa fa-fw fa-bars" aria-hidden="true"></i> Navigation</a>
+                    </li>
+                    <li>
+                        <a href="modals.html">
+                            <i class="fa fa-fw fa-times-circle" aria-hidden="true" style="color: #9d9d9d"></i> Modals</a>
+                    </li>
+                    <li>
+                        <a href="tabs.html">
+                            <i class="fa fa-fw fa-folder" aria-hidden="true"></i> Tabs</a>
+                    </li>
+                    <li>
+                        <a href="grid.html">
+                            <i class="fa fa-fw fa-th" aria-hidden="true"></i> Grid</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <div class="container-fluid header">
+                <h1>Buttons</h1>
+                <h2>Guiding Principles</h2>
+                <hr>
+                <div class="col-md-6">Buttons are typically used to execute an action on a page, navigate to another page in a wizard style flow,
+                    open a new modal, or close the current modal. Don't use ellipses (...) in the button label unless it
+                    opens a new modal. Do not use arrows in buttons unless it is in the specifications. Consider using link
+                    tags for "Cancel" and "Close" actions. JIRA has good examples of this. Be careful not to let technical
+                    jargon slip into buttons.</div>
+                <div class="col-md-6">"Save" is generally well understood for saving changes, but "Insert" in the context of creating content typically
+                    is not. I think for the most part we are pretty good about using understandable terms such as "Update",
+                    "Save", "Create, etc... The ordering of buttons weather in an active window, framed popup, or modal follows
+                    the structure below "\ close \ primary \ success \ danger".</div>
+            </div>
+            <!-- <h3>XL - Camel Case</h3>
+            <ul class="btns">
+                <li class="btns">
+                    <button type="button" class="enc-btn disabled enc-btn-xl-camel">Close</button>
+                </li>
+                <li class="btns">
+                    <button type="button" class="enc-btn basic enc-btn-xl-camel">Close</button>
+                </li>
+                <li class="btns">
+                    <button type="button" class="enc-btn primary enc-btn-xl-camel">Primary</button>
+                </li>
+                <li class="btns">
+                    <button type="button" class="enc-btn success enc-btn-xl-camel">Success</button>
+                </li>
+                <li class="btns">
+                    <button type="button" class="enc-btn danger enc-btn-xl-camel">Danger</button>
+                </li>
+                <li class="btns">
+                    <button type="button" class="enc-btn link enc-btn-xl-camel">Link</button>
+                </li>
+            </ul> -->
+            <h3>Large All Caps</h3>
+            <div class="container-fluid header">
+                <p>Used for CTA actions such as 'CREATE NEW' 'SIGN IN' ect.</p>
+                <ul class="btns">
+                    <li class="btns">
+                        <button type="button" class="enc-btn disabled enc-btn-lg">Close</button>
+                    </li>
+                    <li class="btns">
+                        <button type="button" class="enc-btn basic enc-btn-lg">Close</button>
+                    </li>
+                    <li class="btns">
+                        <button type="button" class="enc-btn primary enc-btn-lg">Primary</button>
+                    </li>
+                    <li class="btns">
+                        <button type="button" class="enc-btn success enc-btn-lg">Success</button>
+                    </li>
+                    <li class="btns">
+                        <button type="button" class="enc-btn danger enc-btn-lg">Danger</button>
+                    </li>
+                    <li class="btns">
+                        <button type="button" class="enc-btn link enc-btn-lg">Link</button>
+                    </li>
+                </ul>
+                <h3>Large - Camel Case</h3>
+                <div class="container-fluid header">
+                    <p>Used for navigation, and any other system action where white space permits a larger button size. Main
+                        content, Modal footer, ect. 'Next' 'Back' 'Cancel' ...</p>
+                    <ul class="btns">
+                        <li class="btns">
+                            <button type="button" class="enc-btn disabled enc-btn-lg-camel">Close</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn basic enc-btn-lg-camel">Close</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn primary enc-btn-lg-camel">Primary</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn success enc-btn-lg-camel">Success</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn danger enc-btn-lg-camel">Danger</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn link enc-btn-lg-camel">Link</button>
+                        </li>
+                    </ul>
+                    <h3>Small - Camel Case</h3>
+                    <div class="container-fluid header">
+                            <p>Used for navigation, and any other system action where white space dictates a smaller button size. Main
+                                content only 'More Options' Any button or dropdown located inside a data table.</p>
+                    <ul class="btns">
+                        <li class="btns">
+                            <button type="button" class="enc-btn disabled">Close</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn basic">Close</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn primary">Primary</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn success">Success</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn danger">Danger</button>
+                        </li>
+                        <li class="btns">
+                            <button type="button" class="enc-btn link">Link</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+        <script src="scripts/main.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2018 style guide</title>
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">iModules UX Style Guide</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-fw fa-dashboard" aria-hidden="true"></i> Reference Modules</a>
+                    </li>
+                    <li>
+                        <a href="buttons.html">
+                            <i class="fa fa-fw fa-square"></i> Buttons</a>
+                    </li>
+                    <li>
+                        <a href="tables.html">
+                            <i class="fa fa-fw fa-table"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="forms.html">
+                            <i class="fa fa-fw fa-edit"></i> Forms</a>
+                    </li>
+                    <li>
+                        <a href="copy.html">
+                            <i class="fa fa-fw fa-text-width"></i> Copy</a>
+                    </li>
+                    <li>
+                        <a href="navigation.html">
+                            <i class="fa fa-fw fa-bars"></i> Navigation</a>
+                    </li>
+                    <li class="active">
+                        <a href="modals.html">
+                            <i class="fa fa-fw fa-times-circle" aria-hidden="true" style="color: #9d9d9d"></i> Modals</a>
+                    </li>
+                    <li>
+                        <a href="tabs.html">
+                            <i class="fa fa-fw fa-folder"></i> Tabs</a>
+                    </li>
+                    <li>
+                        <a href="grid.html">
+                            <i class="fa fa-fw fa-th"></i> Grid</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <div class="container-fluid header">
+                <h1>Modals</h1>
+                <h2>Guiding Principles</h2>
+                <hr>
+                <div class="col-md-6">Info, Warning and Critical modals present themselves whenever the users attention needs to be taken off the
+                    screen they are currently on. They produce a faded background behind the popup. Alerts are presented
+                    when a taken action requires little to no notice, such as a successful upload, or info about elements
+                    on a page. If a users screen is focused in the center of a large data table i.e. more than 10 rows, a
+                    popup will always be used, so that when the user closes the window they will not lose their place in
+                    the page.</div>
+                <div class="col-md-6">All alerts can only be dismissed by clicking the close button in the upper right corner of the colored box.
+                    List groups are used when the user needs to make one or more decicions inside a modal. Modals may vary
+                    in width and height erratically depending on window content. All sizes that do not fall within "Info,
+                    Warning, and Critical are determined by 30px of container padding. All modal close buttons use the HTML
+                    Glyph "&amp; # 9587"
+                </div>
+            </div>
+            <div class="container-fluid">
+                <h1> Modals</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <button type="button" class="enc-btn basic enc-btn-xs" data-toggle="modal" data-target="#myModalmodals" style="margin-bottom: 10px">.foo{...}</button>
+                    <div id="myModalmodals" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="enc-modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" style="margin: 10px 0px 0px 0px">&#9587;</button>
+                                    <h4 class="modal-title">Source Code</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h4>CSS - Warning and Critical Modals</h4>
+                                    <pre>              
+.enc-modal-header
+{
+    padding: 15px;
+}
+
+.enc-modal-header .close
+{
+    margin-top: 5px;
+}
+
+.enc-modal-body
+{
+    position: relative;
+}
+
+.enc-modal-footer
+{
+    padding: 15px;
+    text-align: left;
+}
+
+.enc-modal-data-footer
+{
+    border-top: 1px solid #e5e5e5;
+    padding: 15px;
+    text-align: left;
+}
+
+.enc-modal-footer .enc-btn + .enc-btn
+{
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.enc-modal-footer .enc-btn-group .enc-btn + .enc-btn
+{
+    margin-left: -1px;
+}
+
+.enc-modal-footer .enc-btn-block + .enc-btn-block
+{
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+
+.enc-modal-dialog
+{
+    width: 600px;
+    margin: 30px auto;
+}
+
+.enc-modal-content
+{
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.enc-modal-sm
+{
+    margin-top: 5%;
+    width: 600px;
+}
+}
+
+@media (min-width: 900px) {
+
+.enc-modal-lg
+{
+    margin-top: 5%;
+    width: 1200px;
+}
+}
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <button type="button" class="enc-btn primary" data-toggle="modal" data-target="#demo-modal-3" style="margin-right: 10px">Open Multi-Step Modal</button>
+                    <form class="modal modal multi-step" id="demo-modal-3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&#9587;</button>
+                                    <h3 class="modal-title step-1" data-step="1">Dynamic Content</h3>
+                                    <h3 class="modal-title step-2" data-step="2">Dynamic Content | Events</h3>
+                                    <h3 class="modal-title step-3" data-step="3">Dynamic Content | Events</h3>
+                                </div>
+                                <div class="modal-body step-1" data-step="1">
+                                    <div class="container-fluid">
+                                        <ul class="arrow-breadcrumb">
+                                            <li class="active">
+                                                <a href="#">Define Content</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Select Content</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Select Format</a>
+                                            </li>
+                                        </ul>
+                                        <h3>Select Content</h3>
+                                        <div class="dropdown">
+                                            <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Select Type
+                                                <span class="Select-arrow-zone pull-right">
+                                                    <span class="Select-arrow"></span>
+                                                </span>
+                                            </button>
+                                            <ul class="delux-dropdown-menu btn-block">
+                                                <li>
+                                                    <a href="#">Specific Content</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Dynamic Content</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3>Select Type</h3>
+                                        <div class="dropdown">
+                                            <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left">Select Type
+                                                <span class="Select-arrow-zone pull-right">
+                                                    <span class="Select-arrow"></span>
+                                                </span>
+                                            </button>
+                                            <ul class="delux-dropdown-menu btn-block">
+                                                <li>
+                                                    <a href="#">News</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Events</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3>Event Type</h3>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group input-group">
+                                                    <input type="text" class="form-control">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-primary" type="button">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <select multiple class="form-control">
+                                                <option>Campus</option>
+                                                <option>Career Networking</option>
+                                                <option>Chapter - Albany</option>
+                                                <option>Chapter - Boston</option>
+                                                <option>Chapter - List 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-body step-2" data-step="2">
+                                    <div class="modal-width"></div>
+                                    <div class="container-fluid">
+                                        <ul class="arrow-breadcrumb">
+                                            <li>
+                                                <a href="#">Define Content</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="#">Select Content</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Select Format</a>
+                                            </li>
+                                        </ul>
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="data-grid-container">
+                                            <ul class="data-grid-row">
+                                                <li class="column-header data-grid-column sm-column">Always Show</li>
+                                                <li class="column-header data-grid-column">Event Name</li>
+                                                <li class="column-header data-grid-column">Event Description</li>
+                                                <li class="column-header data-grid-column">Creation Date</li>
+                                                <li class="column-header data-grid-column">Display Date</li>
+                                                <li class="column-header data-grid-column">Archive Date</li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column sm-column">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="1a" value="on">
+                                                        <label for="1a"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column sm-column">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="2a" value="on">
+                                                        <label for="2a"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column sm-column">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="3a" value="on">
+                                                        <label for="3a"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column sm-column">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="4a" value="on">
+                                                        <label for="4a"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column sm-column">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="5a" value="on">
+                                                        <label for="5a"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column sm-column">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="6a" value="on">
+                                                        <label for="6a"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column sm-column">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="7a" value="on">
+                                                        <label for="7a"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column sm-column">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="8a" value="on">
+                                                        <label for="8a"></label>
+                                                    </div>
+                                                </li>
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <div class="imod-pager">
+                                            <div>
+                                                <ul>
+                                                    <li class="previous disabled">
+                                                        <a class="pagerLink">
+                                                            <i class="fa fa-angle-left"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="selected">
+                                                        <a class="pagerLink">1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pagerLink">2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pagerLink">3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pagerLink">4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pagerLink">5</a>
+                                                    </li>
+                                                    <li class="next">
+                                                        <a class="pagerLink">
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <h3>Added Content</h3>
+                                        <div class="data-grid-container">
+                                            <ul class="data-grid-row">
+                                                <li class="column-header data-grid-column">Event Name</li>
+                                                <li class="column-header data-grid-column">Event Description</li>
+                                                <li class="column-header data-grid-column">Creation Date</li>
+                                                <li class="column-header data-grid-column">Display Date</li>
+                                                <li class="column-header data-grid-column">Archive Date</li>
+                                                <li class="column-header data-grid-column sm-column">Remove</li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column sm-column">
+                                                    <i class="fa fa-times-circle fa-2x" style="color: red"></i>
+                                                </li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column sm-column">
+                                                    <i class="fa fa-times-circle fa-2x" style="color: red"></i>
+                                                </li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column sm-column">
+                                                    <i class="fa fa-times-circle fa-2x" style="color: red"></i>
+                                                </li>
+                                            </ul>
+                                            <ul class="data-grid-row">
+                                                <li class="data-grid-column">Block Announcements</li>
+                                                <li class="data-grid-column">Day of giving announcements</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column">02-02-1980 10:05am</li>
+                                                <li class="data-grid-column sm-column">
+                                                    <i class="fa fa-times-circle fa-2x" style="color: red"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <div class="imod-pager" style="margin-bottom: 15px">
+                                            <div>
+                                                <ul>
+                                                    <li class="previous disabled">
+                                                        <a class="pagerLink">
+                                                            <i class="fa fa-angle-left"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="selected">
+                                                        <a class="pagerLink">1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pagerLink">2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pagerLink">3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pagerLink">4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pagerLink">5</a>
+                                                    </li>
+                                                    <li class="next">
+                                                        <a class="pagerLink">
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-body step-3" data-step="3">
+                                    <div class="container-fluid">
+                                        <ul class="arrow-breadcrumb">
+                                            <li>
+                                                <a href="#">Define Content</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Select Content</a>
+                                            </li>
+                                            <li class="active">Select Format </li>
+                                        </ul>
+                                        <h3>Selected: None</h3>
+                                        <div class="content-block-container">
+                                            <ul class="content-block-row">
+                                                <li>
+                                                    <a href="#" class="thumbnail">
+                                                        <div class="thumbnail-box"></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="thumbnail">
+                                                        <div class="thumbnail-box"></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="thumbnail">
+                                                        <div class="thumbnail-box"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="content-block-row">
+                                                <li>
+                                                    <a href="#" class="thumbnail">
+                                                        <div class="thumbnail-box"></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="thumbnail">
+                                                        <div class="thumbnail-box"></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="thumbnail">
+                                                        <div class="thumbnail-box"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="imod-pager">
+                                            <div>
+                                                <ul>
+                                                    <li class="previous disabled">
+                                                        <a class="pagerLink">
+                                                            <i class="fa fa-angle-left"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="selected">
+                                                        <a class="pagerLink">1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pagerLink">2</a>
+                                                    </li>
+                                                    <li class="next">
+                                                        <a class="pagerLink">
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enc-modal-data-footer">
+                                    <button type="button" class="enc-btn basic enc-btn-lg-camel" data-dismiss="modal">Close</button>
+                                    <button type="button" class="enc-btn primary enc-btn-lg-camel step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)"
+                                        style="margin: 0px 0px 0px 15px">Next</button>
+                                    <button type="button" class="enc-btn primary enc-btn-lg-camel step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)"
+                                        style="margin: 0px 0px 0px 15px">Back</button>
+                                    <button type="button" class="enc-btn primary enc-btn-lg-camel step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)"
+                                        style="margin: 0px 0px 0px 15px">Next</button>
+                                    <button type="button" class="enc-btn success enc-btn-lg-camel step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 3)"
+                                        style="margin: 0px 0px 0px 15px">Place Content</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button type="button" class="enc-btn primary" data-toggle="modal" data-target="#myModal11" style="margin-right: 10px">Open Success Modal</button>
+                    <div id="myModal11" class="modal fade" role="dialog">
+                        <div class="modal-dialog enc-modal-sm">
+                            <div class="modal-content">
+                                <div class="enc-modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&#9587;</button>
+                                    <h3 class="modal-title">Success!</h3>
+                                </div>
+                                <div class="enc-modal-body">
+                                    <div class="container-fluid header">
+                                        <div class="col-xs-3" style="text-align: right">
+                                            <i class="fa fa-check-circle fa-4x" style="color:#a8ceaa; padding: 20px;"></i>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            Lorem ipsum dolor sit amet, lobortis sodales, enim mauris posuere, ac pede. Fringilla tincidunt mauris, nullam est amet purus
+                                            sapien bibendum tempor, quidem tellus id faucibus elit lacus velit,</div>
+                                    </div>
+                                </div>
+                                <div class="enc-modal-footer">
+                                    <button type="button" class="enc-btn basic enc-btn-lg-camel" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="enc-btn primary" data-toggle="modal" data-target="#myModal12" style="margin-right: 10px">Open Info Modal</button>
+                    <div id="myModal12" class="modal fade" role="dialog">
+                        <div class="modal-dialog enc-modal-sm">
+                            <div class="modal-content">
+                                <div class="enc-modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&#9587;</button>
+                                    <h3 class="modal-title">Did you know?</h3>
+                                </div>
+                                <div class="enc-modal-body">
+                                    <div class="container-fluid header">
+                                        <div class="col-xs-3" style="text-align: right">
+                                            <i class="fa fa-info-circle fa-4x" style="color:#b6ccec; padding: 20px;"></i>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            Lorem ipsum dolor sit amet, lobortis sodales, enim mauris posuere, ac pede. Fringilla tincidunt mauris, nullam est amet purus
+                                            sapien bibendum tempor, quidem tellus id faucibus elit lacus velit,</div>
+                                    </div>
+                                </div>
+                                <div class="enc-modal-footer">
+                                    <button type="button" class="enc-btn basic enc-btn-lg-camel" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="enc-btn primary" data-toggle="modal" data-target="#myModal13" style="margin-right: 10px">Open Warning Modal</button>
+                    <div id="myModal13" class="modal fade" role="dialog">
+                        <div class="modal-dialog enc-modal-sm">
+                            <div class="modal-content">
+                                <div class="enc-modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&#9587;</button>
+                                    <h3 class="modal-title">Warning!</h3>
+                                </div>
+                                <div class="enc-modal-body">
+                                    <div class="container-fluid header">
+                                        <div class="col-xs-3" style="text-align: right">
+                                            <i class="fa fa-exclamation-triangle fa-4x" style="color:#d29638; padding: 20px;"></i>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            Lorem ipsum dolor sit amet, lobortis sodales, enim mauris posuere, ac pede. Fringilla tincidunt mauris, nullam est amet purus
+                                            sapien bibendum tempor, quidem tellus id faucibus elit lacus velit,</div>
+                                    </div>
+                                </div>
+                                <div class="enc-modal-footer">
+                                    <button type="button" class="enc-btn basic enc-btn-lg-camel" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="enc-btn primary" data-toggle="modal" data-target="#myModal14" style="margin-right: 10px">Open Critical Modal</button>
+                    <div id="myModal14" class="modal fade" role="dialog">
+                        <div class="modal-dialog enc-modal-sm">
+                            <div class="modal-content">
+                                <div class="enc-modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&#9587;</button>
+                                    <h3 class="modal-title">Critical Warning!</h3>
+                                </div>
+                                <div class="enc-modal-body">
+                                    <div class="container-fluid header">
+                                        <div class="col-xs-3" style="text-align: right">
+                                            <i class="fa fa-exclamation-circle fa-4x" style="color:#c26868; padding: 20px;"></i>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            Lorem ipsum dolor sit amet, lobortis sodales, enim mauris posuere, ac pede. Fringilla tincidunt mauris, nullam est amet purus
+                                            sapien bibendum tempor, quidem tellus id faucibus elit lacus velit,</div>
+                                    </div>
+                                </div>
+                                <div class="enc-modal-footer">
+                                    <button type="button" class="enc-btn basic enc-btn-lg-camel" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <h1>Alerts</h1>
+                </div>
+                <div class="row no-gutters">
+                    <button type="button" class="enc-btn basic enc-btn-xs" data-toggle="modal" data-target="#myModalalerts" style="margin-right: 10px">.foo {...}</button>
+                    <div id="myModalalerts" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="enc-modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&#9587;</button>
+                                    <h4 class="modal-title">Source Code</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h4>CSS</h4>
+                                    <pre>.enc-alert
+{
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.enc-alert h4
+{
+    margin-top: 0;
+    color: inherit;
+}
+
+.enc-alert .enc-alert-link
+{
+    font-weight: 300;
+}
+
+.enc-alert > p, .enc-alert > ul
+{
+    margin-bottom: 0;
+}
+
+.enc-alert > p + p
+{
+    margin-top: 5px;
+}
+
+.enc-alert-dismissable, .enc-alert-dismissible
+{
+    padding-right: 35px;
+}
+
+.enc-alert-dismissable .close, .enc-alert-dismissible .close
+{
+    position: relative;
+    top: 5px;
+    right: -21px;
+    color: inherit;
+}
+
+.enc-alert-success
+{
+    color: #3c763d;
+    border-style: solid;
+    border-color: #3c763d;
+    background-color: #dff0d8;
+    border-width: 0px 0px 0px 10px;
+   
+}
+
+.enc-alert-success hr
+{
+    border-top-color: #c9e2b3;
+}
+
+.enc-alert-success .enc-alert-link
+{
+    color: #2b542c;
+}
+
+.enc-alert-info
+{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #31708f;
+    border-style: solid;
+    border-width: 0px 0px 0px 10px;
+}
+
+.enc-alert-info hr
+{
+    border-top-color: #a6e1ec;
+}
+
+.enc-alert-info .enc-alert-link
+{
+    color: #245269;
+}
+
+.enc-alert-warning
+{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #8a6d3b;
+    border-style: solid;
+    border-width: 0px 0px 0px 10px;
+}
+
+.enc-alert-warning hr
+{
+    border-top-color: #f7e1b5;
+}
+
+.enc-alert-warning .enc-alert-link
+{
+    color: #66512c;
+}
+
+.enc-alert-danger
+{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442;
+    border-style: solid;
+    border-width: 0px 0px 0px 10px;
+}
+
+.enc-alert-danger hr
+{
+    border-top-color: #e4b9c0;
+}
+
+.enc-alert-danger .enc-alert-link
+{
+    color: #843534;
+}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="enc-alert enc-alert-success">
+                        <button type="button" class="close" data-dismiss="alert">&#9587;</button> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                    <div class="enc-alert enc-alert-info">
+                        <button type="button" class="close" data-dismiss="alert">&#9587;</button> Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
+                    <div class="enc-alert enc-alert-warning">
+                        <button type="button" class="close" data-dismiss="alert">&#9587;</button> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</div>
+                    <div class="enc-alert enc-alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">&#9587;</button> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                        nisi ut aliquid ex ea commodi consequatur.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Build Scripts. -->
+    <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <!-- endbuild -->
+
+    <script>
+        sendEvent = function (sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+    </script>
+
+</body>
+
+</html>

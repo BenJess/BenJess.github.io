@@ -1,0 +1,205 @@
+.list-subhead {
+    margin: 20px 0px 20px 20px;
+    color: #4A90E2;
+    border-bottom: 1px solid rgb(214, 226, 240);
+}
+
+.table-dropdown {
+    position: relative;
+    text-align: center;
+    margin: 0px -20px 0px -20px;
+}
+
+.search-control {
+    padding: 5px 10px;
+}
+
+.delux-dropdown-menu1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    width: 300px;
+    max-width: inherit;
+    min-width: 250px;
+    padding: 0px 0;
+    margin: 0px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.delux-dropdown-menu1 .delux-divider {
+    height: 1px;
+    margin: 0px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.delux-dropdown-menu1 > li > a {
+    display: block;
+    max-width: inherit;
+    min-width: inherit;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 300;
+    line-height: 2;
+    color: #333;
+    white-space: nowrap;
+    background-color: #fff;
+}
+
+.delux-dropdown-menu1 > li > a:hover, .delux-dropdown-menu1 > li > a:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #90bcf0;
+}
+
+.delux-dropdown-menu1 > .active > a, .delux-dropdown-menu1 > .active > a:hover, .delux-dropdown-menu1 > .active > a:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #90bcf0;
+    outline: 0;
+}
+
+.delux-dropdown-menu1 > .disabled > a, .delux-dropdown-menu1 > .disabled > a:hover, .delux-dropdown-menu1 > .disabled > a:focus {
+    color: #494949;
+}
+
+.delux-dropdown-menu1 > .disabled > a:hover, .delux-dropdown-menu1 > .disabled > a:focus {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.open > .delux-dropdown-menu1 {
+    display: block;
+}
+
+.delux-dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 3;
+    color: #FFF;
+    background-color: #4A90E2;
+    white-space: nowrap;
+}
+
+.delux-dropdown-header-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 990;
+}
+
+.delux-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+
+    /* width: 300px; */
+    max-width: inherit;
+    min-width: 250px;
+    padding: 0px 0;
+    margin: 0px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.delux-dropdown-menu .delux-divider {
+    height: 1px;
+    margin: 0px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.delux-dropdown-menu > li > a {
+    word-wrap: break-word;
+    white-space: normal;
+    display: block;
+    max-width: inherit;
+    min-width: inherit;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 300;
+    line-height: 2;
+    color: #333;
+    background-color: #fff;
+}
+
+.delux-dropdown-menu > li > a:hover, .delux-dropdown-menu > li > a:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #90bcf0;
+}
+
+.delux-dropdown-menu > .active > a, .delux-dropdown-menu > .active > a:hover, .delux-dropdown-menu > .active > a:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #90bcf0;
+    outline: 0;
+}
+
+.delux-dropdown-menu > .disabled > a, .delux-dropdown-menu > .disabled > a:hover, .delux-dropdown-menu > .disabled > a:focus {
+    color: #494949;
+}
+
+.delux-dropdown-menu > .disabled > a:hover, .delux-dropdown-menu > .disabled > a:focus {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.open > .delux-dropdown-menu {
+    display: block;
+}
+
+.delux-dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 3;
+    color: #FFF;
+    background-color: #4A90E2;
+    white-space: nowrap;
+}
+
+.delux-dropdown-header-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 990;
+}

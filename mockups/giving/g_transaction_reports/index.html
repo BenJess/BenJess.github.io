@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2018 style guide</title>
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="css/giving-enc-admin.css" rel="stylesheet">
+    <!-- endbuild -->
+
+</head>
+
+<body style="background-color: #ececec">
+    <div class="content-wrapper" id="dynamic-container">
+        <div class="container-fluid">
+            <h1 id="pagetitle">Transaction Reports</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="inner-content-wrapper" id="build_step1">
+                <div class="container-fluid">
+                    <p>The Reconciliation Export allows you to obtain a list of donors who have transactions for your campaigns
+                        within the date range you specify.</p>
+                </div>
+                <div class="container-fluid" style="margin-bottom: 15px">
+                    <ul class="btns">
+                        <li class="btns">
+                            <button class="enc-btn primary enc-btn-sm">Create New Export</button>
+                            <button class="enc-btn primary enc-btn-sm" data-toggle="modal" data-target="#config_ident_fields">Configure Identifier Fields</button>
+                            <div id="config_ident_fields" class="modal fade" role="dialog">
+                                <div class="modal-dialog enc-modal-lg">
+                                    <div class="modal-content" style="padding: 15px">
+                                        <div class="enc-modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&#9587;</button>
+                                            <h3 class="modal-title">Configure Identifier Fields</h3>
+                                        </div>
+                                        <div class="enc-modal-body">
+                                            <div class="container-fluid">
+                                                <div class="enc-alert enc-alert-info">
+                                                    Fields selected are designed to display in all recon exports.</div>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid">
+                                            <div class="row_content2" id="instance_fields2">
+                                                <!-- Instance Fields -->
+                                                <h3>Available Identifier Fields</h3>
+                                                <div class="multiSelect" style="margin-bottom: 15px">
+                                                    <select multiple class="form-control">
+                                                        <option>Alum Dinner</option>
+                                                        <option>AmberTest - freeEK</option>
+                                                        <option>AmberTest - test auto renewal</option>
+                                                        <option>AmberTest - top level</option>
+                                                        <option>Attending Law Gathering</option>
+                                                        <option>Attending Undergrad Gathering</option>
+                                                        <option>Authenticated</option>
+                                                        <option>Autorenew test - auto1</option>
+                                                    </select>
+                                                    <div class="select-buttons">
+                                                        <button class="enc-btn select-right"></button>
+                                                        <button class="enc-btn select-left"></button>
+                                                    </div>
+                                                    <select multiple class="form-control">
+                                                        <option>Alum Dinner</option>
+                                                        <option>AmberTest - freeEK</option>
+                                                        <option>AmberTest - test auto renewal</option>
+                                                        <option>AmberTest - top level</option>
+                                                        <option>Attending Law Gathering</option>
+                                                        <option>Attending Undergrad Gathering</option>
+                                                        <option>Authenticated</option>
+                                                        <option>Autorenew test - auto1</option>
+                                                    </select>
+                                                    <span>
+                                                        <div class="field-sort-btns">
+                                                            <button class="enc-sort-btn btn-link sort-top glyphicon glyphicon-triangle-top"></button>
+                                                            <button class="enc-sort-btn btn-link sort-up glyphicon glyphicon-chevron-up"></button>
+                                                            <button class="enc-sort-btn btn-link sort-down glyphicon glyphicon-chevron-down"></button>
+                                                            <button class="enc-sort-btn btn-link sort-bottom glyphicon glyphicon-triangle-bottom"></span></button>
+                                                </div>
+                                            </div>
+                                            <!-- Instance Fields END -->
+                                        </div>
+                                    </div>
+                                    <div class="enc-modal-footer">
+                                        <ul class="btns">
+                                            <li class="btns"><button type="button" class="enc-btn basic enc-btn-lg" data-dismiss="modal">Cancel</button></li>
+                                            <li class="btns"><button type="button" class="enc-btn success enc-btn-lg" data-dismiss="modal">Save</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-fluid" style="margin: 0px 0px 15px -15px">
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="enc-form-group input-group">
+                                <input type="text" class="form-control">
+                                <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                                        </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="data-grid-container">
+                        <ul class="data-grid-row">
+                            <li class="column-header data-grid-column sm-column">Edit</li>
+                            <li class="column-header data-grid-column" style="color: #4a90e2">Report Name</li>
+                            <li class="column-header data-grid-column" style="color: #4a90e2">Description</li>
+                            <li class="column-header data-grid-column" style="color: #4a90e2">Date Added</li>
+                            <li class="column-header data-grid-column">Report Type</li>
+                            <li class="column-header data-grid-column">Frequency</li>
+                            <li class="column-header data-grid-column" style="color: #4a90e2">Start Date</li>
+                            <li class="column-header data-grid-column" style="color: #4a90e2">End Date</li>
+                            <li class="column-header data-grid-column">Data Output</li>
+                        </ul>
+                        <ul class="data-grid-row">
+                            <li class="data-grid-column sm-column">
+                                <div class="table-dropdown">
+                                    <button class="enc-btn cog dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left"><span class="fa fa-cog fa-2x" style="color:green"></span></button>
+                                    <ul class="table-delux-dropdown-menu btn-block menu_arrow_box">
+                                        <li><a href="#">Edit Details</a></li>
+                                        <li><a href="#">View Template</a></li>
+                                        <li><a href="#">Edit Template</a></li>
+                                        <li><a href="#">Duplicate Template</a></li>
+                                        <li><a href="#">Send Preview</a></li>
+                                        <li class="table-delux-divider"></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="data-grid-column"> Fake reports </li>
+                            <li class="data-grid-column"> The best fake reports around </li>
+                            <li class="data-grid-column"> 02-02-1980 10:05am </li>
+                            <li class="data-grid-column"> The best report type </li>
+                            <li class="data-grid-column"> Erry day </li>
+                            <li class="data-grid-column"> 02-02-1980 10:05am </li>
+                            <li class="data-grid-column"> 02-02-1980 10:05am </li>
+                            <li class="data-grid-column"> All the data that's fit to output </li>
+                        </ul>
+                        <ul class="data-grid-row">
+                            <li class="data-grid-column sm-column">
+                                <div class="table-dropdown">
+                                    <button class="enc-btn cog dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left"><span class="fa fa-cog fa-2x" style="color:green"></span></button>
+                                    <ul class="table-delux-dropdown-menu btn-block menu_arrow_box">
+                                        <li><a href="#">Edit Details</a></li>
+                                        <li><a href="#">View Template</a></li>
+                                        <li><a href="#">Edit Template</a></li>
+                                        <li><a href="#">Duplicate Template</a></li>
+                                        <li><a href="#">Send Preview</a></li>
+                                        <li class="table-delux-divider"></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="data-grid-column"> Fake reports </li>
+                            <li class="data-grid-column"> The best fake reports around </li>
+                            <li class="data-grid-column"> 02-02-1980 10:05am </li>
+                            <li class="data-grid-column"> The best report type </li>
+                            <li class="data-grid-column"> Erry day </li>
+                            <li class="data-grid-column"> 02-02-1980 10:05am </li>
+                            <li class="data-grid-column"> 02-02-1980 10:05am </li>
+                            <li class="data-grid-column"> All the data that's fit to output </li>
+                        </ul>
+                        <ul class="data-grid-row">
+                            <li class="data-grid-column sm-column">
+                                <div class="table-dropdown">
+                                    <button class="enc-btn cog dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left"><span class="fa fa-cog fa-2x" style="color:green"></span></button>
+                                    <ul class="table-delux-dropdown-menu btn-block menu_arrow_box">
+                                        <li><a href="#">Edit Details</a></li>
+                                        <li><a href="#">View Template</a></li>
+                                        <li><a href="#">Edit Template</a></li>
+                                        <li><a href="#">Duplicate Template</a></li>
+                                        <li><a href="#">Send Preview</a></li>
+                                        <li class="table-delux-divider"></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="data-grid-column"> Fake reports </li>
+                            <li class="data-grid-column"> The best fake reports around </li>
+                            <li class="data-grid-column"> 02-02-1980 10:05am </li>
+                            <li class="data-grid-column"> The best report type </li>
+                            <li class="data-grid-column"> Erry day </li>
+                            <li class="data-grid-column"> 02-02-1980 10:05am </li>
+                            <li class="data-grid-column"> 02-02-1980 10:05am </li>
+                            <li class="data-grid-column"> All the data that's fit to output </li>
+                        </ul>
+                        <div class="container-fluid">
+                            <div class="imod-pager" style="margin-top: 30px">
+                                <div>
+                                    <ul>
+                                        <li class="previous disabled"><a class="pagerLink"><i class="fa fa-angle-left"></i></a></li>
+                                        <li class="selected"><a class="pagerLink">1</a></li>
+                                        <li><a class="pagerLink">2</a></li>
+                                        <li><a class="pagerLink">3</a></li>
+                                        <li><a class="pagerLink">4</a></li>
+                                        <li><a class="pagerLink">5</a></li>
+                                        <li class="next"><a class="pagerLink"><i class="fa fa-angle-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Build Scripts. -->
+    <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="../../../scripts/main.js" type="text/javascript"></script>
+    <script src="scripts/gtre.js" type="text/javascript"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>

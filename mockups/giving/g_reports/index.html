@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2018 style guide</title>
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="css/giving-enc-admin.css" rel="stylesheet">
+    <!-- endbuild -->
+
+</head>
+
+<body style="background-color: #ececec">
+    <div class="row" style="margin: 0px 0px 40px 0px">
+        <ul class="nav nav-steps centered-pills setup-panel">
+            <li class="active arrow_box">
+                <a href="#step-1">
+                    <h4>Settings</h4>
+                </a>
+            </li>
+            <li class="disabled">
+                <a href="#step-2">
+                    <h4>Configure Data</h4>
+                </a>
+            </li>
+            <li class="disabled">
+                <a href="#step-3">
+                    <h4>Notification Email</h4>
+                </a>
+            </li>
+            <li class="disabled">
+                <a href="#step-4">
+                    <h4>Finish</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="content-wrapper-sm">
+        <div class="col-md-12">
+            <h1 id="pagetitle">Settings</h1>
+        </div>
+        <!--SETTINGS STEP-1 BEGIN-->
+        <div class="setup-content" id="step-1">
+            <div class="col-md-12">
+                <div id="inner-content-wrapper-sm">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Setup</h3>
+                            <div class="dropdown">
+                                <button class="Select-control dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: left"><span id="list_choice"></span><span class="Select-arrow-zone pull-right"><span class="Select-arrow"></span></span></button>
+                                <p class="help-block">When should this export be run?</p>
+                                <ul id="dropdown_items" class="delux-dropdown-menu btn-block">
+                                </ul>
+                            </div>
+                            <!-- Checkbox -->
+                            <div class="form-group">
+                                <!-- Checkbox -->
+                                <div class="checkbox" id="checkbox1"> <span>
+                        <input type="checkbox" id="checked1">
+                        <label for="checked1">Save this export so it can be used again later.</label>
+                    </span> </div>
+                                <!-- Checkbox END -->
+                            </div>
+                            <!-- Checkbox END -->
+                            <!-- Name and Desc -->
+                            <div class="row_content" id="name_and_description1">
+                                <!-- Name and Desc -->
+                                <div class="form-group" id="export_name">
+                                    <h3>Export Name<span style="color: red; font-size: 18px;"> * required</span></h3>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <h3>Description</h3>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <!-- Name and Desc END -->
+                            </div>
+                            <!-- Name and Desc END -->
+                            <div class="row">
+                                <!-- Once A Scheduled Date -->
+                                <div class="row_content" id="once_a_sch_date1">
+                                    <!-- Once A Scheduled Date -->
+                                    <div class="col-md-12">
+                                        <h3>Date to run export<span style="color: red; font-size: 18px;"> * required</span></h3>
+                                        <form method="post">
+                                            <div class="form-group input-group" id="date_to_run">
+                                                <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                                                <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button submit"><i class="fa fa-calendar"></i></button>
+                                    </span> </div>
+                                        </form>
+                                    </div>
+                                    <!-- Once A Scheduled Date END -->
+                                </div>
+                                <!-- Once A Scheduled Date END -->
+                            </div>
+                            <div class="row">
+                                <!-- Daily to Last Day of Quarter Both Dates  -->
+                                <div class="row_content" id="daily_to_lastquarter_bothdates1">
+                                    <!-- Daily to Last Day of Quarter Both Dates -->
+                                    <div class="col-md-6">
+                                        <h3>From<span style="color: red; font-size: 18px;"> * required</span></h3>
+                                        <form method="post">
+                                            <div class="form-group input-group">
+                                                <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                                                <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button submit"><i class="fa fa-calendar"></i></button>
+                                        </span> </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>To<span style="color: red; font-size: 18px;"> * required</span></h3>
+                                        <form method="post">
+                                            <div class="form-group input-group">
+                                                <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                                                <span class="input-group-btn">
+                                                <button class="btn btn-primary" type="button submit"><i class="fa fa-calendar"></i></button>
+                                            </span> </div>
+                                        </form>
+                                    </div>
+                                    <!-- Daily to Last Day of Quarter Both Dates END -->
+                                </div>
+                                <!-- Daily to Last Day of Quarter Both Dates END -->
+                            </div>
+                            <!-- Radio BTNS  -->
+                            <div class="row_content" id="radio_btns_step1">
+                                <!-- Radio BTNS -->
+                                <div class="form-group">
+                                    <h3>File Retrieval</h3>
+                                    <div class="radio">
+                                        <input type="radio" id="radio01" name="radio" />
+                                        <label for="radio01"><span></span>Email a link to the file when the export is ready.</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" id="radio02" name="radio" />
+                                        <label for="radio02"><span></span>Save file on this community's secure FTP</label>
+                                    </div>
+                                </div>
+                                <!-- Radio BTNS END -->
+                            </div>
+                            <!-- Radio BTNS END -->
+                            <ul class="btns">
+                                <li class="btns">
+                                    <button type="button" class="enc-btn basic enc-btn-lg-camel">Cancel</button>
+                                </li>
+                                <li class="btns">
+                                    <button type="button" id="activate-step-2" class="enc-btn primary enc-btn-lg-camel">Next</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SETTINGS STEP-1 END-->
+    <!--SETTINGS STEP-2 BEGIN-->
+    <div class="setup-content" id="step-2">
+        <div class="col-md-12">
+            <div id="inner-content-wrapper-sm-lvl2">
+                <!-- Checkbox -->
+                <div class="form-group">
+                    <!-- Checkbox -->
+                    <div class="checkbox" id="checkbox2"> <span>
+                    <input type="checkbox" id="checked2">
+                    <label for="checked2">Filter data based on when users submitted the form.</label>
+                </span> </div>
+                    <!-- Checkbox END -->
+                </div>
+                <!-- Checkbox END -->
+                <div class="row">
+                    <!-- Daily to Last Day of Quarter Both Dates  -->
+                    <div class="row_content2" id="daily_to_lastquarter_bothdates2">
+                        <!-- Daily to Last Day of Quarter Both Dates -->
+                        <div class="col-md-6">
+                            <h3>From</h3>
+                            <form method="post">
+                                <div class="form-group input-group">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button submit"><i class="fa fa-calendar"></i></button>
+                                </span> </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>To</h3>
+                            <form method="post">
+                                <div class="form-group input-group">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button submit"><i class="fa fa-calendar"></i></button>
+                                    </span> </div>
+                            </form>
+                        </div>
+                        <!-- Daily to Last Day of Quarter Both Dates END -->
+                    </div>
+                    <!-- Daily to Last Day of Quarter Both Dates END -->
+                </div>
+                <!-- Checkbox -->
+                <div class="form-group">
+                    <!-- Checkbox -->
+                    <div class="checkbox" id="checkbox2a"> <span>
+                        <input type="checkbox" id="checked2a">
+                        <label for="checked2a">Limit export to use date updated since last run.</label>
+                    </span> </div>
+                    <!-- Checkbox END -->
+                </div>
+                <!-- Checkbox END -->
+                <!-- Instance Fields -->
+                <div class="row_content2" id="instance_fields2">
+                    <!-- Instance Fields -->
+                    <h3>Available Fields</h3>
+                    <div class="multiSelect" style="margin-bottom: 15px">
+                        <select multiple class="form-control">
+                            <option>Alum Dinner</option>
+                            <option>AmberTest - freeEK</option>
+                            <option>AmberTest - test auto renewal</option>
+                            <option>AmberTest - top level</option>
+                            <option>Attending Law Gathering</option>
+                            <option>Attending Undergrad Gathering</option>
+                            <option>Authenticated</option>
+                            <option>Autorenew test - auto1</option>
+                        </select>
+                        <div class="select-buttons">
+                            <button class="enc-btn select-right"></button>
+                            <button class="enc-btn select-left"></button>
+                        </div>
+                        <select multiple class="form-control">
+                            <option>Alum Dinner</option>
+                            <option>AmberTest - freeEK</option>
+                            <option>AmberTest - test auto renewal</option>
+                            <option>AmberTest - top level</option>
+                            <option>Attending Law Gathering</option>
+                            <option>Attending Undergrad Gathering</option>
+                            <option>Authenticated</option>
+                            <option>Autorenew test - auto1</option>
+                        </select>
+                        <span>
+                            <div class="field-sort-btns">
+                                <button class="enc-sort-btn btn-link sort-top glyphicon glyphicon-triangle-top"></button>
+                                <button class="enc-sort-btn btn-link sort-up glyphicon glyphicon-chevron-up"></button>
+                                <button class="enc-sort-btn btn-link sort-down glyphicon glyphicon-chevron-down"></button>
+                                <button class="enc-sort-btn btn-link sort-bottom glyphicon glyphicon-triangle-bottom"></span></button>
+                    </div>
+                </div>
+                <!-- Instance Fields END -->
+            </div>
+            <!-- Instance Fields END -->
+            <ul class="btns">
+                <li class="btns">
+                    <button type="button" id="cancel2" class="enc-btn basic enc-btn-lg-camel">Cancel</button>
+                </li>
+                <li class="btns">
+                    <button type="button" id="backto-step-1" class="enc-btn basic enc-btn-lg-camel">Back</button>
+                </li>
+                <li class="btns">
+                    <button type="button" id="activate-step-3" class="enc-btn primary enc-btn-lg-camel">Next</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <!--SETTINGS STEP-2 END-->
+    <!--SETTINGS STEP-3 BEGIN-->
+    <div class="setup-content" id="step-3">
+        <div class="col-md-12">
+            <div id="inner-content-wrapper-sm-lvl2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="list-builder">
+                            <h3>Add Recipients<span style="color: red; font-size: 18px;"> * required</span></h3>
+                            <div class="form-group input-group">
+                                <input type="text" class="form-control" name="recipientText" value="khsdfk;h@gmail.." class="form-control" style="color: red;">
+                                <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button>
+                                    </span> </div>
+                            <div class="list-items-box">
+                                <ul>
+                                    <li>email.test1@gmail.com<i class="fa fa-remove"></i></li>
+                                    <li>email.test2@gmail.com<i class="fa fa-remove"></i></li>
+                                    <li>email.test3@gmail.com<i class="fa fa-remove"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group" id="export_name">
+                            <h3>From Name<span style="color: red; font-size: 18px;"> * required</span></h3>
+                            <input class="form-control">
+                        </div>
+                        <div class="form-group" id="export_name">
+                            <h3>From Email</h3>
+                            <input class="form-control" placeholder="support@imodules.com" disabled>
+                        </div>
+                        <div class="form-group" id="export_name">
+                            <h3>Subject<span style="color: red; font-size: 18px;"> * required</span></h3>
+                            <input class="form-control" placeholder="Staging - University of Notre Dame - Scheduled Export ##Export##">
+                        </div>
+                        <div class="enc-alert enc-alert-info">
+                            <strong>FYI!</strong> An email will be sent to the above recipients notifying them of the report
+                            link. By basic the following email message will display.</div>
+                        <hr>
+                        <p>The ##Export Name## scheduled export for ##Group Name## is ready to be retrieved. ##File Link## to
+                            retrieve the file.</p>
+                        <br>
+                        <p>Or alternatively, paste the URL shown below into your internet browser's address to retrieve the
+                            file: ##File URL##</p>
+                        <br>
+                        <p>Best Reguards,</p>
+                        <br>
+                        <p>iModules Support<br>support@imodules.com</p>
+                        <hr>
+                        <ul class="btns">
+                            <li class="btns">
+                                <button type="button" id="cancel3" class="enc-btn basic enc-btn-lg-camel">Cancel</button>
+                            </li>
+                            <li class="btns">
+                                <button type="button" id="backto-step-2" class="enc-btn basic enc-btn-lg-camel">Back</button>
+                            </li>
+                            <li class="btns">
+                                <button type="button" id="activate-step-4" class="enc-btn primary enc-btn-lg-camel">Next</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SETTINGS STEP-3 END-->
+    <!--SETTINGS STEP-4 BEGIN-->
+    <div class="setup-content" id="step-4">
+        <div class="col-md-12">
+            <div id="inner-content-wrapper-sm-lvl2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--ON demand BTN fields-->
+                        <div class="row_content4" id="ondemand_button_fields">
+                            <!--ON demand BTN fields-->
+                            <!-- <div class="enc-alert enc-alert-success row_content4a" id="successAlert">
+                                    Your export has been downloaded. Please access the file in your browser’s download history.</div> -->
+                            <!-- <div class="enc-alert enc-alert-warning row_content4a" id="warningAlert">
+                                    You do not currently have any data to export.</div> -->
+                            <div class="enc-alert enc-alert-danger row_content4a" id="failAlert">
+                                There was an error processing your request, Please try again.</div>
+                            <!--<h3 class="row_content4" id="hideTxtBlock">Please use the button below to generate and download your export.</h3>-->
+                            <ul class="btns">
+                                <li class="btns">
+                                    <button type="button" class="enc-btn basic enc-btn-lg-camel">Return to Reporting</button>
+                                </li>
+                                <li class="btns">
+                                    <!--<button type="button" id="activate-step-1" class="enc-btn success enc-btn-lg-camel row_content4a">Download Export File</button>-->
+                                </li>
+                            </ul>
+                            <!--ON demand BTN fields END-->
+                        </div>
+                        <!--ON demand BTN fields END-->
+                        <!--Non ON demand BTN fields-->
+                        <div class="row_content4a" id="non_ondemand_button_fields">
+                            <!--Non ON demand BTN fields-->
+                            <h3>Export Name</h3>
+                            <p>Weekly Export for Registrations</p>
+                            <hr>
+                            <h3>Schedule</h3>
+                            <p>This export will be run weekly from 2015-04-14 until 2017-04-14</p>
+                            <hr>
+                            <h3>File Retrieval</h3>
+                            <p>A notification email containing a link to the exported data will be sent to the following:<br>sgoldmand@imodules.com,
+                                lmackey@imodules.com
+                            </p>
+                            <hr>
+                            <ul class="btns">
+                                <li class="btns">
+                                    <button type="button" class="enc-btn basic enc-btn-lg-camel">Return to Reporting</button>
+                                </li>
+                            </ul>
+                            <!--Non ON demand BTN fields END-->
+                        </div>
+                        <!--Non ON demand BTN fields END-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SETTINGS STEP-4 END-->
+
+    <!-- Build Scripts. -->
+    <script src="https://use.fontawesome.com/33e5b8138b.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    
+    <script src="../../../scripts/main.js" type="text/javascript"></script>
+    <script src="../../../scripts/emhtml.js" type="text/javascript"></script>
+
+    <script src="scripts/gtre.js" type="text/javascript"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+/* Modified Alert Styles
+#################################################################################################### */
+
+.enc-alert
+{
+    padding: 30px;
+ /* margin-bottom: 20px; */
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+/* Modified Nav Styles
+#################################################################################################### */
+
+.nav-tabs
+{
+    border-bottom: 1px solid #DDD;
+}
+
+.top-nav>li
+{
+    display: inline-block;
+    float: left;
+}
+
+/* Modified Tab Panes
+#################################################################################################### */
+
+.tab-pane
+{
+    padding: 15px 0;
+}
+
+.tab-content
+{
+    padding: 20px
+} 
+
+/* Modified Jumbotron
+#################################################################################################### */
+
+.jumbotron p
+{
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+/* Modified BTN row alignment
+#################################################################################################### */
+
+.enc-button-row .enc-btn + .enc-btn
+{
+    margin-top: 10;
+    margin-left: 15px;
+}
+
+/* Modified UL sort list
+#################################################################################################### */
+
+ul.sort {
+    list-style: none;
+    display: ;
+    margin: 0px;
+}
+
+.field-sort-btns {
+    
+    font-size: 12px;
+    margin-left: 15px;
+    width: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+/* Modified Page Wrapping / Classes > IDs
+#################################################################################################### */
+
+@media(min-width:768px) {
+
+    #wrapper
+    {
+        padding-left: 225px;
+    }
+
+    #page-wrapper
+    {
+        padding: 10px;
+        width: 100%;
+        background-color: #fff;
+    }
+}
+
+#content-wrapper-sm
+{
+    position: relative;
+    max-width: 768px;
+    margin: auto;
+    padding-top: 15px 30px 50px 30px;
+}
+
+#content-wrapper
+{
+    position: relative;
+    max-width: 1360px;
+    margin: auto;
+    padding-top: 15px 30px 50px 30px;
+}
+
+#inner-content-wrapper-sm
+{
+    height: auto;
+    margin: auto;
+    max-width: 768px;
+    padding: 0px 30px 30px 30px;
+    background-color: #fff;
+}
+
+#inner-content-wrapper-sm-lvl2
+{
+    height: auto;
+    margin: auto;
+    max-width: 738px;
+    padding: 30px 30px 30px 30px;
+    background-color: #fff;
+}
+
+#inner-content-wrapper
+{
+    height: auto;
+    margin: auto;
+    min-width: 900px;
+    padding: 0px 30px 30px 30px;
+    background-color: #fff;
+}
+
+/* Modified table column
+#################################################################################################### */
+
+.data-grid-column
+{
+    font-size: 14px;
+    border-left: 0px solid #ddd;
+    padding: 10px;
+    min-height: 50px;
+    max-height: 90px;
+    display: flex;
+    word-break: break-word;
+    align-items: center;
+    flex: 2 0;
+}
